@@ -45,15 +45,6 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
 .mainDiv {
 	background-image: url("../images/bg-main.jpg");
 	background-repeat: no-repeat;
@@ -80,6 +71,12 @@ body {
 	padding: 20px;
 	z-index: 10;
 }
+.leftSide .navbar {
+	padding: 0;
+}
+.leftSide .navbar a img.logoTopMenu {
+	max-width: 70px;
+}
 .leftSide ul.nav {
 	padding-left: 20px;
 	z-index: 10;
@@ -87,7 +84,7 @@ body {
 .leftSide ul.nav li a {
 	margin: 8px 10px;
 	font-size: 14px;
-	font-weight: bold;
+	font-weight: 600;
 	font-family: "Open Sans";
 	line-height: 16px;
 	color: #747474;
@@ -141,8 +138,7 @@ body {
 }
 
 .leftSide .bigLogo img {
-	/* max-width: 100%; */
-	max-height: 76px;
+	max-height: 86px;
 	margin: auto;
 	text-align: center;
 }
@@ -158,8 +154,53 @@ body {
 }
 
 .leftSide .row .imageBox img {
-	max-width: 150px;
+	max-width: 70px;
 	z-index: 10;
+}
+.leftSide .row .imageBox .topIcon {
+	    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.leftSide .row .imageBox .topIcon h2 span {
+	    margin-left: 20px;
+    color: #97edf6;
+}
+.leftSide .row .imageBox .topIcon h2 {
+font-size: 22px;
+    font-family: "Dock11 Heavy";
+    position: relative;
+    font-weight: bold;
+    line-height: 20px;
+    padding-top: 24px;
+    margin-left: -16px;
+    z-index: 10;
+    color: #1ac1e4;
+    text-transform: uppercase;
+}
+.leftSide .row .imageBox .topIcon h2 span.uniqueWord {
+    position: absolute;
+    top: 24px;
+    left: 0;
+    margin: 0;
+    display: inline-block;
+    color: #fff!important;
+}
+.leftSide .row .imageBox .topIcon.designBox h2 {
+	color: #4709d2;
+}
+.leftSide .row .imageBox .topIcon.contentCreationBox h2,
+.leftSide .row .imageBox .topIcon.contentCreationBox h2 span {
+    color:#8ac426;
+}
+.leftSide .row .imageBox .topIcon.financeBox h2 {
+	color:#de8b22;
+}
+.leftSide .row .imageBox .topIcon.resiliencyBox h2 {
+	color: #6f2ca9;
+}
+.leftSide .row .imageBox .topIcon.codingBox h2 {
+	color: #3a6075;
 }
 .leftSide .row .imageBox h3 {
 	font-size: 14px;
@@ -198,15 +239,17 @@ body {
 	font-family: "Montserrat Regular";
 	font-weight: bold;
 	z-index: 10;
+	transition: .5s ease-in-out;
 }
 .leftSide .row .imageBox a img {
 	max-width: 30px;
 	margin-left: 5px;
 	z-index: 10;
+	transition: .2s ease-in-out;
 }
-
-
-
+.leftSide .row .imageBox a:hover img {
+	margin-left: 8px;
+}
 
 
 /*   Right Side Styles   */
@@ -286,7 +329,7 @@ body {
 	flex-direction: column;
 	position: absolute;
 	top: 41px;
-	left: -24px;
+	left: 0px;
 	z-index: 10;
 }
 .rightSide .socialLinksIcons .socialList li {
@@ -312,7 +355,7 @@ body {
 .rightSide .bottomMenu ul.nav li a{
 	margin: 8px 10px;
 	font-size: 14px;
-	font-weight: bold;
+	font-weight: 600;
 	font-family: "Open Sans";
 	line-height: 16px;
 	color: #fff;
@@ -334,109 +377,87 @@ body {
 	right: -150px;
 	z-index: 0;
 }
-
-@media (max-width: 1180px) {
-	.rightSide .footerBottomLogo {
-		margin-left: 0px;
+@media (max-width: 991px) and (min-width: 767px) {
+	.leftSide .centerLogoMarty img {
+		display: none;
+	}	
+}
+@media (max-width: 991px) {
+	.mainDiv {
+		background-image: url("../images/mobile-bg.jpg");
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		width: 100%;
+		height: 100%;
+		z-index: -10;
+		min-height: 100vh;
 	}
-	.rightSide .bottomMenu .bottomLogoDonate {
-		margin-left: 0px;
+	.navbar-light .navbar-toggler i {
+		color: #609eb3;
+	}
+	.navbar-light .navbar-toggler,.navbar-light .navbar-toggler:focus {
+		border:none;
+		outline: none;
+	}
+	.leftSide ul.nav {
+		padding: 15px 0 0 0;
+		flex-direction: column;
+	}
+	.leftSide .bigLogo,.rightSide .donateLink {
+		text-align: center;
 	}
 }
 
-@media (max-width: 991px) {
-	.mainDiv .leftSide .topMenu {
-		justify-content: center;
+
+@media (max-width: 767px) {
+	.rightSide .bottomMenu {
+		flex-direction: column;
+	}
+	.leftSide .centerLogoMarty img {
+		position: absolute;
+		top: 0px;
+		max-width: 250px;
+		z-index: 0;
+		left: -200px;
+	}
+	.rightSide .footerBottomLogo img {
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 575px) {
+	.leftSide .centerLogoMarty img {
+		top: 0px;
+		right: 0px;
+		max-width: 200px;
+		z-index: 0;
+		left: 50%;
+		margin-left: -70px;
+	}
+	.rightSide .detailText {
+		padding: 0;
 	}
 	.leftSide ul.nav li a {
 		color: #fff;
 	}
-	.leftSide .centerLogoMarty img {
-		position: absolute;
-		top: -120px;
-		max-width: 400px;
-		z-index: 0;
-		left: calc(50% - 270px);
+	.mainDiv {
+		background-image: url("../images/bg-main.jpg");
 	}
-	.rightSide .donateLink img {
-		max-width: 110px;
+	.rightSide .heroHeading,.rightSide .youthImage,.rightSide .socialLinksIcons {
+		text-align: center;
 	}
-	.rightSide .bottomMenu {
-		display: flex;
-		justify-content: space-between;
-		padding: 50px 0px;
-		z-index: 10;
-		align-items: center;
+	.rightSide .socialLinksIcons .socialList {
+		justify-content: center;
+		top: 0;
+		position: relative;
+		flex-direction: row;
+	}
+	.rightSide .bottomMenu ul.nav {
 		justify-content: center;
 	}
 	.rightSide .bottomMenu .bottomLogoDonate {
-		margin-left: 30px;
-	}
-	.rightSide .heroHeading {
-		text-align: center;
-	}
-	.rightSide .donateLink {
-		text-align: center;
-	}
-}
-
-@media (max-width: 767px) {
-	.leftSide .bigLogo img {
-		max-width: 250px;
-	}
-	.leftSide .bigLogo {
-		text-align: center;
-	}
-	.leftSide .centerLogoMarty img {
-		position: absolute;
-		top: 50%;
-		max-width: 260px;
-		z-index: 0;
-		left: calc(50% - 210px);
-		display: none;
-	}
-	/*.mainDiv {*/
-	/*	background-image: linear-gradient(to bottom, #6104ba, #77b9ef);*/
-	/*}*/
-
-}
-
-
-@media (max-width: 400px) {
-	.leftSide .centerLogoMarty img {
-		position: absolute;
-		top: 100%;
-		max-width: 260px;
-		z-index: 0;
-		left: calc(50% - 100px);
-	}
-	.rightSide .youthImage {
-		text-align: center;
-	}
-	.rightSide .mentorImage {
-		text-align: center;
-	}
-	.rightSide .detailText {
-		padding: 0 15px;
-	}
-	.rightSide .footerBottomLogo {
-		flex-direction: column;
-		align-items: center;
-	}
-	.rightSide .footerBottomLogo .mislaLogo, .rightSide .footerBottomLogo .martyLogo{
-		padding: 0 0 30px 0;
-	}
-	.mainDiv .leftSide .topMenu {
-		flex-direction: column;
-	}
-	.mainDiv .leftSide .logoTopMenu img {
-		margin-bottom: 30px;
-	}
-	.leftSide .bigLogo img {
-		max-width: 220px;
-	}
-	.rightSide .socialLinksIcons .socialList {
-		top: 40px;
-		left: -15px;
+		margin-left: 0;
+		margin-top: 20px;
 	}
 }
