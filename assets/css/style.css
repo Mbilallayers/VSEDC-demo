@@ -1,0 +1,442 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: "Montserrat Regular";
+}
+
+/*    Fonts Stylessss     */
+
+@font-face {
+	font-family: "Dock11 Heavy";
+	src:url("../fonts/heavy_dock11.otf");
+}
+
+@font-face {
+	font-family: "Montserrat Regular";
+	src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Nunito SemiBold";
+	src:url("../fonts/Nunito-SemiBold.ttf");
+}
+
+@font-face {
+	font-family: "Nunito ExtraBold";
+	src:url("../fonts/Nunito-ExtraBold.ttf");
+}
+
+@font-face {
+	font-family: "Nunito Bold";
+	src:url("../fonts/Nunito-Bold.ttf");
+}
+
+@font-face {
+	font-family: "Montserrat Bold";
+	src:url("../fonts/Montserrat-Bold.ttf");
+}
+
+@font-face {
+	font-family: "Montserrat Black";
+	src:url("../fonts/Montserrat-Black.ttf");
+}
+
+
+
+
+
+
+
+
+
+
+
+.mainDiv {
+	background-image: url("../images/bg-main.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	z-index: -10;
+	min-height: 100vh;
+}
+
+.mainDiv .leftSide .topMenu {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	z-index: 10;
+}
+
+.mainDiv .leftSide .logoTopMenu img {
+	max-width: 70px;
+	z-index: 10;
+}
+.leftSide {
+	padding: 20px;
+	z-index: 10;
+}
+.leftSide ul.nav {
+	padding-left: 20px;
+	z-index: 10;
+}
+.leftSide ul.nav li a {
+	margin: 8px 10px;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: "Open Sans";
+	line-height: 16px;
+	color: #747474;
+	transition: .3s ease-in-out;
+	position: relative;
+	display: inline-block;
+	padding: 0;
+	padding-bottom: 8px;
+	z-index: 10;
+}
+.leftSide ul.nav li a:before,.rightSide .bottomMenu ul.nav li a:before {
+	content: " ";
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	transition: all 0.3s;
+	opacity: 0;
+	height: 3px;
+	width: 0px;
+	background-color: #000;
+	color: #fff;
+	z-index: 10;
+}
+.leftSide ul.nav li {
+	display: inline-block;
+	list-style: none;
+	transition: background-color .3s;
+	z-index: 10;
+}
+.leftSide ul.nav li:hover a:before,.rightSide .bottomMenu ul.nav li:hover a:before {
+	width: 100%;
+	opacity: 1;
+	background-color: #a30ae9;
+	z-index: 10;
+}
+.leftSide ul.nav li a.active:before,.rightSide .bottomMenu ul.nav li a.active:before {
+	background-color: #e49523;
+	width: 100%;
+	opacity: 1;
+	z-index: 10;
+}
+.leftSide ul.nav li a.active,.rightSide .bottomMenu ul.nav li a.active {
+	color: #e49523;
+	z-index: 10;
+}
+.leftSide ul.nav li:hover a,.rightSide .bottomMenu ul.nav li:hover a {
+	color: #a30ae9;
+	z-index: 10;
+}
+
+.leftSide .bigLogo img {
+	/* max-width: 100%; */
+	max-height: 76px;
+	margin: auto;
+	text-align: center;
+}
+.leftSide .bigLogo {
+	padding: 30px 0px;
+}
+
+.leftSide .row .imageBox {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 10px;
+}
+
+.leftSide .row .imageBox img {
+	max-width: 150px;
+	z-index: 10;
+}
+.leftSide .row .imageBox h3 {
+	font-size: 14px;
+	font-weight: bold;
+	margin-top: 10px;
+	font-family: "Montserrat Bold";
+	color: #3b3a4d;
+	z-index: 10;
+}
+.leftSide .row .imageBox h3 span {
+	margin-bottom: 10px;
+	display: inline-block;
+	z-index: 10;
+}
+.leftSide .row .imageBox a.devShopLink {
+	color: #1ac1e4;
+}
+.leftSide .row .imageBox a.designLink {
+	color: #8157e0;
+}
+.leftSide .row .imageBox a.contentCreationLink {
+	color: #8ac326;
+}
+.leftSide .row .imageBox a.financeLink {
+	color: #c57715;
+}
+.leftSide .row .imageBox a.resiliencyLink {
+	color: #6126b3;
+}
+.leftSide .row .imageBox a.codingLink {
+	color: #609eb3;
+}
+.leftSide .row .imageBox a {
+	font-size: 12px;
+	text-decoration: none;
+	font-family: "Montserrat Regular";
+	font-weight: bold;
+	z-index: 10;
+}
+.leftSide .row .imageBox a img {
+	max-width: 30px;
+	margin-left: 5px;
+	z-index: 10;
+}
+
+
+
+
+
+/*   Right Side Styles   */
+
+.rightSide {
+	padding: 20px;
+	z-index: 10;
+}
+
+.rightSide .donateLink {
+	padding: 20px 30px;
+	height: 100%;
+	z-index: 10;
+}
+.rightSide .donateLink img {
+	max-width: 90px;
+	z-index: 10;
+}
+.rightSide .heroHeading {
+	padding: 10px;
+	text-align: left;
+	z-index: 10;
+}
+.rightSide .heroHeading h1 {
+	font-family: "Montserrat Black";
+	font-size: 50px;
+	color: #fff;
+	text-transform: uppercase;
+	line-height: 54px;
+	z-index: 10;
+}
+.rightSide .youthImage {
+	text-align: right;
+	z-index: 10;
+}
+.rightSide .youthImage img,.rightSide .mentorImage img {
+	padding: 10px;
+	max-width: 70%;
+	z-index: 10;
+}
+.rightSide .detailText {
+	font-family: "Nunito Bold";
+	padding: 0 40px;
+	z-index: 10;
+}
+.rightSide .detailText h3 {
+	font-size: 14px;
+	font-weight: bold;
+	padding: 10px 0px;
+	color: #fff;
+	z-index: 10;
+}
+
+.rightSide .footerBottomLogo {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-end;
+	margin-left: 36px;
+	z-index: 10;
+}
+.rightSide .footerBottomLogo .mislaLogo, .rightSide .footerBottomLogo .martyLogo {
+	padding: 0px 20px;
+	z-index: 10;
+}
+.rightSide .footerBottomLogo img {
+	max-width: 160px;
+	z-index: 10;
+}
+.rightSide .socialLinksIcons {
+	position: relative;
+	z-index: 10;
+}
+.rightSide .socialLinksIcons .socialList {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 41px;
+	left: -24px;
+	z-index: 10;
+}
+.rightSide .socialLinksIcons .socialList li {
+	padding: 20px;
+}
+.rightSide .socialLinksIcons .socialList li a img {
+	max-width: 30px;
+	z-index: 10;
+}
+.rightSide .bottomMenu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 50px 0px 0;
+	z-index: 10;
+}
+.rightSide .bottomMenu .bottomLogoDonate a img {
+	max-width: 70px;
+}
+.rightSide .bottomMenu .bottomLogoDonate {
+	margin-left: 30px;
+}
+.rightSide .bottomMenu ul.nav li a{
+	margin: 8px 10px;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: "Open Sans";
+	line-height: 16px;
+	color: #fff;
+	transition: .3s ease-in-out;
+	position: relative;
+	display: inline-block;
+	padding: 0;
+	padding-bottom: 8px;
+	z-index: 10;
+}
+
+.leftSide .middleImageBox {
+	position: relative;
+}
+.leftSide .centerLogoMarty img {
+	position: absolute;
+	top: -105px;
+	max-width: 350px;
+	right: -150px;
+	z-index: 0;
+}
+
+@media (max-width: 1180px) {
+	.rightSide .footerBottomLogo {
+		margin-left: 0px;
+	}
+	.rightSide .bottomMenu .bottomLogoDonate {
+		margin-left: 0px;
+	}
+}
+
+@media (max-width: 991px) {
+	.mainDiv .leftSide .topMenu {
+		justify-content: center;
+	}
+	.leftSide ul.nav li a {
+		color: #fff;
+	}
+	.leftSide .centerLogoMarty img {
+		position: absolute;
+		top: -120px;
+		max-width: 400px;
+		z-index: 0;
+		left: calc(50% - 270px);
+	}
+	.rightSide .donateLink img {
+		max-width: 110px;
+	}
+	.rightSide .bottomMenu {
+		display: flex;
+		justify-content: space-between;
+		padding: 50px 0px;
+		z-index: 10;
+		align-items: center;
+		justify-content: center;
+	}
+	.rightSide .bottomMenu .bottomLogoDonate {
+		margin-left: 30px;
+	}
+	.rightSide .heroHeading {
+		text-align: center;
+	}
+	.rightSide .donateLink {
+		text-align: center;
+	}
+}
+
+@media (max-width: 767px) {
+	.leftSide .bigLogo img {
+		max-width: 250px;
+	}
+	.leftSide .bigLogo {
+		text-align: center;
+	}
+	.leftSide .centerLogoMarty img {
+		position: absolute;
+		top: 50%;
+		max-width: 260px;
+		z-index: 0;
+		left: calc(50% - 210px);
+		display: none;
+	}
+	/*.mainDiv {*/
+	/*	background-image: linear-gradient(to bottom, #6104ba, #77b9ef);*/
+	/*}*/
+
+}
+
+
+@media (max-width: 400px) {
+	.leftSide .centerLogoMarty img {
+		position: absolute;
+		top: 100%;
+		max-width: 260px;
+		z-index: 0;
+		left: calc(50% - 100px);
+	}
+	.rightSide .youthImage {
+		text-align: center;
+	}
+	.rightSide .mentorImage {
+		text-align: center;
+	}
+	.rightSide .detailText {
+		padding: 0 15px;
+	}
+	.rightSide .footerBottomLogo {
+		flex-direction: column;
+		align-items: center;
+	}
+	.rightSide .footerBottomLogo .mislaLogo, .rightSide .footerBottomLogo .martyLogo{
+		padding: 0 0 30px 0;
+	}
+	.mainDiv .leftSide .topMenu {
+		flex-direction: column;
+	}
+	.mainDiv .leftSide .logoTopMenu img {
+		margin-bottom: 30px;
+	}
+	.leftSide .bigLogo img {
+		max-width: 220px;
+	}
+	.rightSide .socialLinksIcons .socialList {
+		top: 40px;
+		left: -15px;
+	}
+}
