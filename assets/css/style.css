@@ -3,6 +3,10 @@
 	margin: 0;
 }
 
+html,body {
+	/* position: fixed; */
+	/* overflow: hidden; */
+}
 body {
 	font-family: "Montserrat Regular";
 }
@@ -54,6 +58,9 @@ body {
 	height: 100%;
 	z-index: -10;
 	min-height: 100vh;
+	align-items: center;
+	justify-content: center;
+	display: flex;
 }
 
 .mainDiv .leftSide .topMenu {
@@ -68,17 +75,17 @@ body {
 	z-index: 10;
 }
 .leftSide {
-	padding: 20px;
+	padding: 10px 10px;
 	z-index: 10;
 }
 .leftSide .navbar {
 	padding: 0;
 }
 .leftSide .navbar a img.logoTopMenu {
-	max-width: 70px;
+	max-width: 65px;
 }
 .leftSide ul.nav {
-	padding-left: 20px;
+	padding-left: 10px;
 	z-index: 10;
 }
 .leftSide ul.nav li a {
@@ -138,60 +145,50 @@ body {
 }
 
 .leftSide .bigLogo img {
-	max-height: 86px;
+	max-height: 60px;
 	margin: auto;
 	text-align: center;
 }
 .leftSide .bigLogo {
-	padding: 30px 0px;
+	padding: 10px 0px;
+	text-align: center;
 }
 
 .leftSide .row .imageBox {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	padding: 10px;
+	padding: 10px 10px 0;
 }
 
 .leftSide .row .imageBox img {
-	max-width: 70px;
+	max-width: 50px;
 	z-index: 10;
 }
 .leftSide .row .imageBox .topIcon {
-	    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .leftSide .row .imageBox .topIcon h2 span {
-	    margin-left: 20px;
-    color: #97edf6;
+	margin-left: 20px;
+	color: #97edf6;
 }
-.leftSide .row .imageBox .topIcon h2 {
-font-size: 22px;
-    font-family: "Dock11 Heavy";
-    position: relative;
-    font-weight: bold;
-    line-height: 20px;
-    padding-top: 24px;
-    margin-left: -16px;
-    z-index: 10;
-    color: #1ac1e4;
-    text-transform: uppercase;
-}
+.leftSide .row .imageBox .topIcon h2 {font-size: 20px;font-family: "Dock11 Heavy";position: relative;font-weight: bold;line-height: 20px;padding-top: 24px;margin-left: -16px;z-index: 10;color: #1ac1e4;text-transform: uppercase;}
 .leftSide .row .imageBox .topIcon h2 span.uniqueWord {
-    position: absolute;
-    top: 24px;
-    left: 0;
-    margin: 0;
-    display: inline-block;
-    color: #fff!important;
+	position: absolute;
+	top: 24px;
+	left: 0;
+	margin: 0;
+	display: inline-block;
+	color: #fff!important;
 }
 .leftSide .row .imageBox .topIcon.designBox h2 {
 	color: #4709d2;
 }
 .leftSide .row .imageBox .topIcon.contentCreationBox h2,
 .leftSide .row .imageBox .topIcon.contentCreationBox h2 span {
-    color:#8ac426;
+	color:#8ac426;
 }
 .leftSide .row .imageBox .topIcon.financeBox h2 {
 	color:#de8b22;
@@ -205,13 +202,13 @@ font-size: 22px;
 .leftSide .row .imageBox h3 {
 	font-size: 14px;
 	font-weight: bold;
-	margin-top: 10px;
+	margin-top: 8px;
 	font-family: "Montserrat Bold";
 	color: #3b3a4d;
 	z-index: 10;
 }
 .leftSide .row .imageBox h3 span {
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 	display: inline-block;
 	z-index: 10;
 }
@@ -255,7 +252,7 @@ font-size: 22px;
 /*   Right Side Styles   */
 
 .rightSide {
-	padding: 20px;
+	padding: 10px 10px;
 	z-index: 10;
 }
 
@@ -265,7 +262,7 @@ font-size: 22px;
 	z-index: 10;
 }
 .rightSide .donateLink img {
-	max-width: 90px;
+	max-width: 80px;
 	z-index: 10;
 }
 .rightSide .heroHeading {
@@ -275,10 +272,10 @@ font-size: 22px;
 }
 .rightSide .heroHeading h1 {
 	font-family: "Montserrat Black";
-	font-size: 50px;
+	font-size: 39px;
 	color: #fff;
 	text-transform: uppercase;
-	line-height: 54px;
+	line-height: 44px;
 	z-index: 10;
 }
 .rightSide .youthImage {
@@ -286,8 +283,8 @@ font-size: 22px;
 	z-index: 10;
 }
 .rightSide .youthImage img,.rightSide .mentorImage img {
-	padding: 10px;
-	max-width: 70%;
+	/* padding: 10px; */
+	max-width: 55%;
 	z-index: 10;
 }
 .rightSide .detailText {
@@ -298,7 +295,7 @@ font-size: 22px;
 .rightSide .detailText h3 {
 	font-size: 14px;
 	font-weight: bold;
-	padding: 10px 0px;
+	padding: 10px 0px 0;
 	color: #fff;
 	z-index: 10;
 }
@@ -310,13 +307,14 @@ font-size: 22px;
 	align-items: flex-end;
 	margin-left: 36px;
 	z-index: 10;
+	margin-top: 10px;
 }
 .rightSide .footerBottomLogo .mislaLogo, .rightSide .footerBottomLogo .martyLogo {
 	padding: 0px 20px;
 	z-index: 10;
 }
 .rightSide .footerBottomLogo img {
-	max-width: 160px;
+	max-width: 120px;
 	z-index: 10;
 }
 .rightSide .socialLinksIcons {
@@ -328,26 +326,26 @@ font-size: 22px;
 	display: flex;
 	flex-direction: column;
 	position: absolute;
-	top: 41px;
-	left: 0px;
+	top: 27px;
+	left: 45px;
 	z-index: 10;
 }
 .rightSide .socialLinksIcons .socialList li {
-	padding: 20px;
+	padding: 13px;
 }
 .rightSide .socialLinksIcons .socialList li a img {
-	max-width: 30px;
+	max-width: 23px;
 	z-index: 10;
 }
 .rightSide .bottomMenu {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 50px 0px 0;
+	padding: 20px 0px 0;
 	z-index: 10;
 }
 .rightSide .bottomMenu .bottomLogoDonate a img {
-	max-width: 70px;
+	max-width: 60px;
 }
 .rightSide .bottomMenu .bottomLogoDonate {
 	margin-left: 30px;
@@ -372,15 +370,15 @@ font-size: 22px;
 }
 .leftSide .centerLogoMarty img {
 	position: absolute;
-	top: -105px;
-	max-width: 350px;
-	right: -150px;
+	top: -90px;
+	max-width: 292px;
+	right: -164px;
 	z-index: 0;
 }
 @media (max-width: 991px) and (min-width: 767px) {
 	.leftSide .centerLogoMarty img {
 		display: none;
-	}	
+	}
 }
 @media (max-width: 991px) {
 	.mainDiv {
