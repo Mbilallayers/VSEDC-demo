@@ -1,461 +1,1184 @@
 * {
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0
 }
 
-html,body {
-	/* position: fixed; */
-	/* overflow: hidden; */
+body,
+html {
+  position: fixed;
+  overflow: hidden
 }
+
 body {
-	font-family: "Montserrat Regular";
-}
-
-/*    Fonts Stylessss     */
-
-@font-face {
-	font-family: "Dock11 Heavy";
-	src:url("../fonts/heavy_dock11.otf");
+  font-family: "Montserrat Regular"
 }
 
 @font-face {
-	font-family: "Montserrat Regular";
-	src: url("../fonts/Montserrat-Regular.ttf");
+  font-family: "Dock11 Heavy";
+  src: url(../fonts/heavy_dock11.otf)
 }
 
 @font-face {
-	font-family: "Nunito SemiBold";
-	src:url("../fonts/Nunito-SemiBold.ttf");
+  font-family: "Montserrat Regular";
+  src: url(../fonts/Montserrat-Regular.ttf)
 }
 
 @font-face {
-	font-family: "Nunito ExtraBold";
-	src:url("../fonts/Nunito-ExtraBold.ttf");
+  font-family: "Nunito SemiBold";
+  src: url(../fonts/Nunito-SemiBold.ttf)
 }
 
 @font-face {
-	font-family: "Nunito Bold";
-	src:url("../fonts/Nunito-Bold.ttf");
+  font-family: "Nunito ExtraBold";
+  src: url(../fonts/Nunito-ExtraBold.ttf)
 }
 
 @font-face {
-	font-family: "Montserrat Bold";
-	src:url("../fonts/Montserrat-Bold.ttf");
+  font-family: "Nunito Bold";
+  src: url(../fonts/Nunito-Bold.ttf)
 }
 
 @font-face {
-	font-family: "Montserrat Black";
-	src:url("../fonts/Montserrat-Black.ttf");
+  font-family: "Montserrat Bold";
+  src: url(../fonts/Montserrat-Bold.ttf)
 }
 
-
-.mainDiv {
-	background-image: url("../images/bg-main.jpg");
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
-	width: 100%;
-	height: 100%;
-	z-index: -10;
-	min-height: 100vh;
-	align-items: center;
-	justify-content: center;
-	display: flex;
+@font-face {
+  font-family: "Montserrat Black";
+  src: url(../fonts/Montserrat-Black.ttf)
 }
 
-.mainDiv .leftSide .topMenu {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	z-index: 10;
+.home-page {
+  background-image: url(../images/bg-main.jpg)
 }
 
-.mainDiv .leftSide .logoTopMenu img {
-	max-width: 70px;
-	z-index: 10;
+.bg-flex {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  display: flex
 }
+
+.home-page .leftSide .topMenu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 10
+}
+
+#fundrasing .logoTopMenu img,
+.home-page .leftSide .logoTopMenu img {
+  max-width: 70px;
+  z-index: 10
+}
+
+#fundrasing,
 .leftSide {
-	padding: 10px 10px;
-	z-index: 10;
+  padding: 10px 10px;
+  z-index: 10
 }
+
+#fundrasing .navbar,
 .leftSide .navbar {
-	padding: 0;
+  padding: 0
 }
+
+#fundrasing .navbar a img.logoTopMenu,
 .leftSide .navbar a img.logoTopMenu {
-	max-width: 65px;
+  max-width: 65px
 }
+
+#fundrasing ul.nav,
 .leftSide ul.nav {
-	padding-left: 10px;
-	z-index: 10;
+  padding-left: 10px;
+  z-index: 10
 }
+
+#fundrasing ul.nav li a,
 .leftSide ul.nav li a {
-	margin: 8px 10px;
-	font-size: 14px;
-	font-weight: 600;
-	font-family: "Open Sans";
-	line-height: 16px;
-	color: #747474;
-	transition: .3s ease-in-out;
-	position: relative;
-	display: inline-block;
-	padding: 0;
-	padding-bottom: 8px;
-	z-index: 10;
+  margin: 8px 10px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Open Sans";
+  line-height: 16px;
+  color: #747474;
+  transition: .3s ease-in-out;
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  padding-bottom: 8px;
+  z-index: 10
 }
-.leftSide ul.nav li a:before,.rightSide .bottomMenu ul.nav li a:before {
-	content: " ";
-	position: absolute;
-	left: 50%;
-	bottom: 0;
-	-ms-transform: translateX(-50%);
-	transform: translateX(-50%);
-	transition: all 0.3s;
-	opacity: 0;
-	height: 3px;
-	width: 0px;
-	background-color: #000;
-	color: #fff;
-	z-index: 10;
+
+#fundrasing .bottomMenu ul.nav li a:before,
+#fundrasing ul.nav li a:before,
+.leftSide ul.nav li a:before,
+.rightSide .bottomMenu ul.nav li a:before {
+  content: " ";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  transition: all .3s;
+  opacity: 0;
+  height: 3px;
+  width: 0;
+  background-color: #000;
+  color: #fff;
+  z-index: 10
 }
+
+#fundrasing ul.nav li,
 .leftSide ul.nav li {
-	display: inline-block;
-	list-style: none;
-	transition: background-color .3s;
-	z-index: 10;
+  display: inline-block;
+  list-style: none;
+  transition: background-color .3s;
+  z-index: 10
 }
-.leftSide ul.nav li:hover a:before,.rightSide .bottomMenu ul.nav li:hover a:before {
-	width: 100%;
-	opacity: 1;
-	background-color: #a30ae9;
-	z-index: 10;
+
+#fundrasing .bottomMenu ul.nav li:hover a:before,
+#fundrasing ul.nav li:hover a:before,
+.leftSide ul.nav li:hover a:before,
+.rightSide .bottomMenu ul.nav li:hover a:before {
+  width: 100%;
+  opacity: 1;
+  background-color: #a30ae9;
+  z-index: 10
 }
-.leftSide ul.nav li a.active:before,.rightSide .bottomMenu ul.nav li a.active:before {
-	background-color: #e49523;
-	width: 100%;
-	opacity: 1;
-	z-index: 10;
+
+#fundrasing .bottomMenu ul.nav li a.active:before,
+#fundrasing ul.nav li a.active:before,
+.leftSide ul.nav li a.active:before,
+.rightSide .bottomMenu ul.nav li a.active:before {
+  background-color: #e49523;
+  width: 100%;
+  opacity: 1;
+  z-index: 10
 }
-.leftSide ul.nav li a.active,.rightSide .bottomMenu ul.nav li a.active {
-	color: #e49523;
-	z-index: 10;
+
+#fundrasing .bottomMenu ul.nav li a.active,
+#fundrasing ul.nav li a.active,
+.leftSide ul.nav li a.active,
+.rightSide .bottomMenu ul.nav li a.active {
+  color: #e49523;
+  z-index: 10
 }
-.leftSide ul.nav li:hover a,.rightSide .bottomMenu ul.nav li:hover a {
-	color: #a30ae9;
-	z-index: 10;
+
+#fundrasing .bottomMenu ul.nav li:hover a,
+#fundrasing ul.nav li:hover a,
+.leftSide ul.nav li:hover a,
+.rightSide .bottomMenu ul.nav li:hover a {
+  color: #a30ae9;
+  z-index: 10
 }
 
 .leftSide .bigLogo img {
-	max-height: 60px;
-	margin: auto;
-	text-align: center;
+  max-height: 45px;
+  margin: auto;
+  text-align: center
 }
+
 .leftSide .bigLogo {
-	padding: 10px 0px;
-	text-align: center;
+  padding: 10px 0;
+  text-align: center
 }
 
 .leftSide .row .imageBox {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	padding: 10px 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 5px 10px 0
 }
 
 .leftSide .row .imageBox img {
-	max-width: 50px;
-	z-index: 10;
+  max-width: 50px;
+  z-index: 10
 }
+
 .leftSide .row .imageBox .topIcon {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center
 }
+
 .leftSide .row .imageBox .topIcon h2 span {
-	margin-left: 20px;
-	color: #97edf6;
+  margin-left: 20px;
+  color: #97edf6
 }
-.leftSide .row .imageBox .topIcon h2 {font-size: 20px;font-family: "Dock11 Heavy";position: relative;font-weight: bold;line-height: 20px;padding-top: 24px;margin-left: -16px;z-index: 10;color: #1ac1e4;text-transform: uppercase;}
+
+.leftSide .row .imageBox .topIcon h2 {
+  font-size: 20px;
+  font-family: "Dock11 Heavy";
+  position: relative;
+  font-weight: 700;
+  line-height: 20px;
+  padding-top: 24px;
+  margin-left: -16px;
+  z-index: 10;
+  color: #1ac1e4;
+  text-transform: uppercase
+}
+
 .leftSide .row .imageBox .topIcon h2 span.uniqueWord {
-	position: absolute;
-	top: 24px;
-	left: 0;
-	margin: 0;
-	display: inline-block;
-	color: #fff!important;
+  position: absolute;
+  top: 24px;
+  left: 0;
+  margin: 0;
+  display: inline-block;
+  color: #fff !important
 }
+
 .leftSide .row .imageBox .topIcon.designBox h2 {
-	color: #4709d2;
+  color: #4709d2
 }
+
 .leftSide .row .imageBox .topIcon.contentCreationBox h2,
 .leftSide .row .imageBox .topIcon.contentCreationBox h2 span {
-	color:#8ac426;
+  color: #8ac426
 }
+
 .leftSide .row .imageBox .topIcon.financeBox h2 {
-	color:#de8b22;
+  color: #de8b22
 }
+
 .leftSide .row .imageBox .topIcon.resiliencyBox h2 {
-	color: #6f2ca9;
+  color: #6f2ca9
 }
+
 .leftSide .row .imageBox .topIcon.codingBox h2 {
-	color: #3a6075;
+  color: #3a6075
 }
+
 .leftSide .row .imageBox h3 {
-	font-size: 14px;
-	font-weight: bold;
-	margin-top: 8px;
-	font-family: "Montserrat Bold";
-	color: #3b3a4d;
-	z-index: 10;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 5px;
+  font-family: "Montserrat Bold";
+  color: #3b3a4d;
+  z-index: 10
 }
+
 .leftSide .row .imageBox h3 span {
-	margin-bottom: 5px;
-	display: inline-block;
-	z-index: 10;
+  margin-bottom: 5px;
+  display: inline-block;
+  z-index: 10
 }
+
 .leftSide .row .imageBox a.devShopLink {
-	color: #1ac1e4;
+  color: #1ac1e4
 }
+
 .leftSide .row .imageBox a.designLink {
-	color: #8157e0;
+  color: #8157e0
 }
+
 .leftSide .row .imageBox a.contentCreationLink {
-	color: #8ac326;
+  color: #8ac326
 }
+
 .leftSide .row .imageBox a.financeLink {
-	color: #c57715;
+  color: #c57715
 }
+
 .leftSide .row .imageBox a.resiliencyLink {
-	color: #6126b3;
+  color: #6126b3
 }
+
 .leftSide .row .imageBox a.codingLink {
-	color: #609eb3;
+  color: #609eb3
 }
+
 .leftSide .row .imageBox a {
-	font-size: 12px;
-	text-decoration: none;
-	font-family: "Montserrat Regular";
-	font-weight: bold;
-	z-index: 10;
-	transition: .5s ease-in-out;
+  font-size: 12px;
+  text-decoration: none;
+  font-family: "Montserrat Regular";
+  font-weight: 700;
+  z-index: 10;
+  transition: .5s ease-in-out
 }
+
 .leftSide .row .imageBox a img {
-	max-width: 30px;
-	margin-left: 5px;
-	z-index: 10;
-	transition: .2s ease-in-out;
+  max-width: 30px;
+  margin-left: 5px;
+  z-index: 10;
+  transition: .2s ease-in-out
 }
+
 .leftSide .row .imageBox a:hover img {
-	margin-left: 8px;
+  margin-left: 8px
 }
-
-
-/*   Right Side Styles   */
 
 .rightSide {
-	padding: 10px 10px;
-	z-index: 10;
+  padding: 10px 10px;
+  z-index: 10
 }
 
+#fundrasing .donateLink,
 .rightSide .donateLink {
-	padding: 20px 30px;
-	height: 100%;
-	z-index: 10;
+  padding: 20px 30px;
+  height: 100%;
+  z-index: 10
 }
+
+#fundrasing .donateLink img,
 .rightSide .donateLink img {
-	max-width: 80px;
-	z-index: 10;
+  max-width: 80px;
+  z-index: 10
 }
+
 .rightSide .heroHeading {
-	padding: 10px;
-	text-align: left;
-	z-index: 10;
+  padding: 10px;
+  text-align: left;
+  z-index: 10
 }
+
 .rightSide .heroHeading h1 {
-	font-family: "Montserrat Black";
-	font-size: 39px;
-	color: #fff;
-	text-transform: uppercase;
-	line-height: 44px;
-	z-index: 10;
+  font-family: "Montserrat Black";
+  font-size: 42px;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 44px;
+  z-index: 10
 }
+
 .rightSide .youthImage {
-	text-align: right;
-	z-index: 10;
+  text-align: right;
+  z-index: 10
 }
-.rightSide .youthImage img,.rightSide .mentorImage img {
-	/* padding: 10px; */
-	max-width: 55%;
-	z-index: 10;
+
+.rightSide .mentorImage img,
+.rightSide .youthImage img {
+  max-width: 55%;
+  z-index: 10
 }
+
 .rightSide .detailText {
-	font-family: "Nunito Bold";
-	padding: 0 40px;
-	z-index: 10;
+  font-family: "Nunito Bold";
+  padding: 0 40px;
+  z-index: 10
 }
+
 .rightSide .detailText h3 {
-	font-size: 14px;
-	font-weight: bold;
-	padding: 10px 0px 0;
-	color: #fff;
-	z-index: 10;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 0 0;
+  color: #fff;
+  z-index: 10
 }
 
 .rightSide .footerBottomLogo {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: flex-end;
-	margin-left: 36px;
-	z-index: 10;
-	margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  margin-left: 36px;
+  z-index: 10;
+  margin-top: 10px
 }
-.rightSide .footerBottomLogo .mislaLogo, .rightSide .footerBottomLogo .martyLogo {
-	padding: 0px 20px;
-	z-index: 10;
+
+.rightSide .footerBottomLogo .martyLogo,
+.rightSide .footerBottomLogo .mislaLogo {
+  padding: 0 20px;
+  z-index: 10
 }
+
 .rightSide .footerBottomLogo img {
-	max-width: 120px;
-	z-index: 10;
+  max-width: 90px;
+  z-index: 10
 }
+
+#fundrasing .socialLinksIcons,
 .rightSide .socialLinksIcons {
-	position: relative;
-	z-index: 10;
+  position: relative;
+  z-index: 10
 }
+
 .rightSide .socialLinksIcons .socialList {
-	list-style: none;
-	display: flex;
-	flex-direction: column;
-	position: absolute;
-	top: 27px;
-	left: 45px;
-	z-index: 10;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 27px;
+  left: 45px;
+  z-index: 10
 }
+
+#fundrasing .socialLinksIcons .socialList li,
 .rightSide .socialLinksIcons .socialList li {
-	padding: 13px;
+  padding: 13px
 }
+
+#fundrasing .socialLinksIcons .socialList li a img,
 .rightSide .socialLinksIcons .socialList li a img {
-	max-width: 23px;
-	z-index: 10;
+  max-width: 23px;
+  z-index: 10
 }
+
+#fundrasing .bottomMenu,
 .rightSide .bottomMenu {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 20px 0px 0;
-	z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 0;
+  z-index: 10
 }
+
+#fundrasing .bottomMenu .bottomLogoDonate a img,
 .rightSide .bottomMenu .bottomLogoDonate a img {
-	max-width: 60px;
+  max-width: 60px
 }
+
+#fundrasing .bottomMenu .bottomLogoDonate,
 .rightSide .bottomMenu .bottomLogoDonate {
-	margin-left: 30px;
+  margin-left: 30px
 }
-.rightSide .bottomMenu ul.nav li a{
-	margin: 8px 10px;
-	font-size: 14px;
-	font-weight: 600;
-	font-family: "Open Sans";
-	line-height: 16px;
-	color: #fff;
-	transition: .3s ease-in-out;
-	position: relative;
-	display: inline-block;
-	padding: 0;
-	padding-bottom: 8px;
-	z-index: 10;
+
+#fundrasing .bottomMenu ul.nav li a,
+.rightSide .bottomMenu ul.nav li a {
+  margin: 8px 10px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Open Sans";
+  line-height: 16px;
+  color: #fff;
+  transition: .3s ease-in-out;
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  padding-bottom: 8px;
+  z-index: 10
 }
 
 .leftSide .middleImageBox {
-	position: relative;
+  position: relative
+}
+
+.leftSide .centerLogoMarty img {
+  position: absolute;
+  top: -70px;
+  max-width: 292px;
+  right: -164px;
+  z-index: 0
+}
+
+
+/* =====secoend page========== */
+
+.fundrasing-page {
+  background-image: url(../images/fundrasing-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center 200%;
+  background-size: cover;
+  /* width: 100%; */
+  height: 100%;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+
+#fundrasing nav {
+  margin-left: 25px;
+}
+
+#fundrasing nav .col-lg-9 {
+  margin: 0;
+}
+
+/* title */
+
+#fundrasing .bigLogo img {
+  display: block;
+  margin: auto;
+  width: 41%;
+  margin-left: 40%;
+}
+
+/* upper heading circle */
+
+#fundrasing .dotted-circle {
+  display: flex;
+  position: absolute;
+  top: 61%;
+  margin-left: 48%;
+  width: auto;
+}
+
+#fundrasing .dotted-circle .dc {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid;
+  border-radius: 50%;
+  border-color: rgb(245, 196, 105);
+  margin-left: 15px;
+}
+
+/* End upper heading circle */
+
+#fundrasing .heading {
+  margin-left: 20%;
+  position: relative;
+  font-family: "Montserrat Regular";
+  font-size: 21px;
+  font-weight: 300;
+  color: rgb(68, 67, 67);
+  /* top: 75%; */
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 15px;
+}
+
+#fundrasing .heading::after {
+  content: "";
+  display: block;
+  height: .25rem;
+  background: rgb(245, 196, 105);
+  width: 8.5rem;
+  margin: auto;
+  margin-top: 8px;
+}
+
+/* =========== Start Circle section ========= */
+#fundrasing .circle-price {
+  display: block;
+  margin-top: 20px;
+}
+
+#fundrasing .circle-price .img-fluid {
+  display: block;
+  position: absolute;
+  margin-left: 29%;
+  margin-right: auto;
+  width: 62%;
+  z-index: 10;
+}
+
+/* Start Ring making */
+
+/* inner ring */
+
+#fundrasing .ring {
+  width: 8.5em;
+  height: 8.5em;
+  border: .3em solid #757575;
+  border-radius: 50%;
+  position: absolute;
+}
+
+#fundrasing .ring1,
+#fundrasing .ring2,
+#fundrasing .ring3,
+#fundrasing .ring4 {
+  top: 12%;
+}
+
+#fundrasing .ring5,
+#fundrasing .ring6,
+#fundrasing .ring7 {
+  top: 62%;
+}
+
+#fundrasing .ring1 {
+  left: 33.8%;
+}
+
+#fundrasing .ring2 {
+  left: 49%;
+}
+
+#fundrasing .ring3 {
+  left: 64.35%;
+}
+
+#fundrasing .ring4 {
+  left: 79.6%;
+}
+
+#fundrasing .ring5 {
+  left: 41.5%;
+}
+
+#fundrasing .ring6 {
+  left: 56.7%;
+}
+
+#fundrasing .ring7 {
+  left: 71.95%;
+}
+
+/* Outer ring */
+
+#fundrasing .ringsm {
+  width: 9.2em;
+  height: 9.2em;
+  border: .1em solid #757575;
+  border-radius: 50%;
+  position: absolute;
+}
+
+#fundrasing .ringsm1,
+#fundrasing .ringsm2,
+#fundrasing .ringsm3,
+#fundrasing .ringsm4 {
+  top: 9.6%;
+}
+
+#fundrasing .ringsm5,
+#fundrasing .ringsm6,
+#fundrasing .ringsm7 {
+  top: 59.6%;
+}
+
+#fundrasing .ringsm1 {
+  left: 33.25%;
+}
+
+#fundrasing .ringsm2 {
+  left: 48.54%;
+}
+
+#fundrasing .ringsm3 {
+  left: 63.87%;
+}
+
+#fundrasing .ringsm4 {
+  left: 79.12%;
+}
+
+#fundrasing .ringsm5 {
+  left: 41%;
+}
+
+#fundrasing .ringsm6 {
+  left: 56.2%;
+}
+
+#fundrasing .ringsm7 {
+  left: 71.45%;
+}
+
+/* End Ring making */
+
+/* Name and price */
+#fundrasing .circle-price p {
+  position: absolute;
+  text-transform: uppercase;
+  font-family: "Dock11 Heavy";
+  font-size: 90%;
+  z-index: 9999;
+}
+
+#fundrasing .circle-price .price {
+  font-family: "Nunito Bold";
+  font-size: 100%;
+  color: #3b3a4d;
+}
+
+#fundrasing .circle-price .c-text,
+#fundrasing .circle-price .f-text,
+#fundrasing .circle-price .m-text,
+#fundrasing .circle-price .r-text {
+  margin-top: 5.5%;
+}
+
+#fundrasing .circle-price .c-price,
+#fundrasing .circle-price .f-price,
+#fundrasing .circle-price .m-price,
+#fundrasing .circle-price .r-price {
+  margin-top: 7.3%;
+}
+
+#fundrasing .circle-price .b-text,
+#fundrasing .circle-price .d-text,
+#fundrasing .circle-price .me-text {
+  margin-top: 16.8%;
+}
+
+#fundrasing .circle-price .b-price,
+#fundrasing .circle-price .d-price,
+#fundrasing .circle-price .me-price {
+  margin-top: 18.4%;
+}
+
+#fundrasing .circle-price .r-text {
+  margin-left: 32%;
+  color: #6f2ca9;
+}
+
+#fundrasing .circle-price .m-text {
+  margin-left: 49.8%;
+  color: #7ba5f5;
+}
+
+#fundrasing .circle-price .c-text {
+  margin-left: 65.5%;
+  color: #3a6075;
+}
+
+#fundrasing .circle-price .f-text {
+  margin-left: 81.4%;
+  color: #de8b22;
+}
+
+#fundrasing .circle-price .b-text {
+  margin-left: 40.5%;
+  color: #4709d2;
+}
+
+#fundrasing .circle-price .me-text {
+  margin-left: 58%;
+  color: #1ac1e4;
+}
+
+#fundrasing .circle-price .d-text {
+  margin-left: 74%;
+  color: #de8b22;
+}
+
+#fundrasing .circle-price .r-price {
+  margin-left: 33.3%
+}
+
+#fundrasing .circle-price .m-price {
+  margin-left: 49.5%;
+}
+
+#fundrasing .circle-price .c-price {
+  margin-left: 65.4%;
+}
+
+#fundrasing .circle-price .f-price {
+  margin-left: 81.5%;
+}
+
+#fundrasing .circle-price .b-price {
+  margin-left: 41%;
+}
+
+#fundrasing .circle-price .me-price {
+  margin-left: 57.2%;
+}
+
+#fundrasing .circle-price .d-price {
+  margin-left: 74%
+}
+
+#fundrasing .b-image,
+#fundrasing .c-image,
+#fundrasing .d-image,
+#fundrasing .f-image,
+#fundrasing .m-image,
+#fundrasing .me-image,
+#fundrasing .r-image {
+  position: absolute;
+  z-index: 9999;
+}
+
+#fundrasing .circle-price .b-image,
+#fundrasing .circle-price .c-image,
+#fundrasing .circle-price .d-image,
+#fundrasing .circle-price .m-image,
+#fundrasing .circle-price .me-image,
+#fundrasing .circle-price .r-image {
+  width: 2%
+}
+
+#fundrasing .circle-price .r-image {
+  margin-top: 1.3%;
+  margin-left: 38.9%;
+}
+
+#fundrasing .circle-price .c-image {
+  margin-top: 1.8%;
+  margin-left: 62%;
+}
+
+#fundrasing .circle-price .m-image {
+  margin-top: 12.7%;
+  margin-left: 50.8%;
+}
+
+#fundrasing .circle-price .b-image {
+  margin-top: 20.2%;
+  margin-left: 37.1%;
+}
+
+#fundrasing .circle-price .me-image {
+  margin-top: 20.4%;
+  margin-left: 64.8%;
+}
+
+#fundrasing .circle-price .d-image {
+  margin-top: 20.3%;
+  margin-left: 80.9%;
+}
+
+#fundrasing .circle-price .f-image {
+  margin-top: 12.7%;
+  margin-left: 84%;
+  width: 1%;
+}
+
+#fundrasing .socialLinksIcons .socialList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 45px;
+  z-index: 10
+}
+
+/* Youth and mentor section */
+
+#fundrasing .head1,
+#fundrasing .title1,
+#fundrasing .description1,
+#fundrasing .head2,
+#fundrasing .title2,
+#fundrasing .description2 {
+  display: block;
+  position: absolute;
+  color: #fff;
+  font-family: "Montserrat Regular";
+  font-weight: bold;
+}
+
+#fundrasing .head1,
+#fundrasing .head2 {
+  font-size: 88%;
+  text-transform: uppercase;
+  position: absolute;
+  top: 13%;
+}
+
+#fundrasing .head1 {
+  left: 32%;
+}
+
+#fundrasing .head2,
+#fundrasing .description2 {
+  left: 75%;
+}
+
+#fundrasing .title1,
+#fundrasing .title2 {
+  font-size: 40%;
+  text-transform: uppercase;
+  position: absolute;
+  top: 18%;
+}
+
+#fundrasing .title1 {
+  left: 32%;
+}
+
+#fundrasing .title2 {
+  text-align: center;
+  left: 75%;
+}
+
+#fundrasing .title1::after {
+  content: "";
+  display: block;
+  height: .075rem;
+  background: rgba(20, 0, 136, 0.4);
+  width: 4rem;
+  margin: auto;
+  margin-top: 1px;
+}
+
+#fundrasing .title2::after {
+  content: "";
+  display: block;
+  height: .075rem;
+  background: rgba(20, 0, 136, 0.4);
+  width: 4rem;
+  margin-top: 1px;
+}
+
+#fundrasing .description1,
+#fundrasing .description2 {
+  font-size: 45%;
+  width: 15%;
+  top: 21%;
+}
+
+#fundrasing .description1 {
+  left: 32%;
+}
+
+#fundrasing .mentorImage img,
+#fundrasing .youthImage img {
+  width: 41%;
+  margin-top: 0px;
+  padding: 10px 0 184px 0;
+}
+
+#fundrasing .youthImage img {
+  margin-left: 45px;
+}
+
+#fundrasing .mentorImage img {
+  margin-left: 20px
+}
+
+#fundrasing .mentorImage,
+#fundrasing .youthImage {
+  display: inline;
+}
+
+#fundrasing .mislaLogo {
+  width: 53%;
+  margin-top: 175px;
+}
+
+#fundrasing .martyLogo {
+  position: absolute;
+  right: 90px;
+  width: 20%;
+}
+
+#fundrasing .bottomMenu {
+  margin-top: 60px;
+  margin-left: 210px;
+}
+
+/* End secoend page */
+
+@media only screen and (max-width:1270px) {
+  .fundrasing-page {
+    background-position: bottom;
+  }
+
+  #fundrasing .mentorImage img,
+  #fundrasing .youthImage img {
+    width: 40%;
+    margin-top: 0px;
+    padding: 10px 0 200px 0;
+  }
+
+  #fundrasing .head1,
+  #fundrasing .head2 {
+    font-size: 85%;
+    top: 11%;
+  }
+
+  #fundrasing .title1,
+  #fundrasing .title2 {
+    font-size: 37%;
+    top: 16%;
+  }
+
+  #fundrasing .description1,
+  #fundrasing .description2 {
+    font-size: 42%;
+    top: 19%;
+  }
+}
+
+  @media (max-width:991px) and (min-width:767px) {
+    .leftSide .centerLogoMarty img {
+      display: none
+    }
+  }
+
+  @media (max-width:3000px) and (min-width:1400px) {
+    #fundrasing .dotted-circle {
+    margin-left: 51%;
+    width: 100%;
+}
+    #fundrasing .mentorImage img, #fundrasing .youthImage img {
+    padding: 60px 0 172px 0;
+}
+  #fundrasing .circle-price p {
+   
+    font-size: 18px;
+}
+#fundrasing .circle-price .price {
+    font-size: 18px;
+ }
+#fundrasing .circle-price .r-price {
+    margin-left: 33.3%;
+}
+    #fundrasing .bottomMenu {
+    margin-top: 170px;
+}
+#fundrasing .title1, #fundrasing .title2 {
+    top: 33%;
+}
+#fundrasing .description1, #fundrasing .description2 {
+
+    top: 37%;
+}
+#fundrasing .head1, #fundrasing .head2 {
+    top: 28%;
+}
+.fundrasing-page {
+  background-position: center;
+}
+    .leftSide .row .imageBox img {
+    max-width: 70px;
+}
+#fundrasing .navbar a img.logoTopMenu, .leftSide .navbar a img.logoTopMenu {
+    max-width: 71px;
+}
+#fundrasing ul.nav li a, .leftSide ul.nav li a {
+    margin: 8px 10px;
+    font-size: 16px;
+  }
+  .leftSide .bigLogo img {
+    max-height: 75px;
+  }
+  .leftSide .row .imageBox h3 {
+    font-size: 16px;
+  }
+  .leftSide .row .imageBox a {
+    font-size: 14px;
+  }
+.leftSide .row .imageBox {
+    padding: 15px 10px 0;
+}
+.leftSide .row .imageBox .topIcon h2 {
+    font-size: 26px;
+    line-height: 24px;
+    margin-left: -20px;
+}
+.rightSide .mentorImage img,
+.rightSide .youthImage img {
+  max-width: 55%;
+}
+.rightSide .heroHeading h1 {
+    font-size: 50px;
+  }
+  .leftSide .centerLogoMarty img {
+    max-width: 340px;
+}
+.rightSide .socialLinksIcons .socialList {
+    top: 40px;
+    left: 37px;
 }
 .leftSide .centerLogoMarty img {
-	position: absolute;
-	top: -90px;
-	max-width: 292px;
-	right: -164px;
-	z-index: 0;
+    max-width: 340px;
+  }
+  #fundrasing .socialLinksIcons .socialList li a img, .rightSide .socialLinksIcons .socialList li a img {
+    max-width: 30px;
+  }
+.rightSide .detailText h3 {
+    font-size: 18px;
+    padding: 15px 0 0
+  }
+  .rightSide .footerBottomLogo img {
+    max-width: 160px;
 }
-@media (max-width: 991px) and (min-width: 767px) {
-	.leftSide .centerLogoMarty img {
-		display: none;
-	}
+#fundrasing .bottomMenu ul.nav li a, .rightSide .bottomMenu ul.nav li a {
+    font-size: 16px;
+    }
+    #fundrasing .bottomMenu .bottomLogoDonate a img, .rightSide .bottomMenu .bottomLogoDonate a img {
+    max-width: 70px;
 }
-@media (max-width: 991px) {
-	.mainDiv {
-		background-image: url("../images/mobile-bg.jpg");
-		background-repeat: no-repeat;
-		background-position: center center;
-		background-size: cover;
-		width: 100%;
-		height: 100%;
-		z-index: -10;
-		min-height: 100vh;
-	}
-	.navbar-light .navbar-toggler i {
-		color: #609eb3;
-	}
-	.navbar-light .navbar-toggler,.navbar-light .navbar-toggler:focus {
-		border:none;
-		outline: none;
-	}
-	.leftSide ul.nav {
-		padding: 15px 0 0 0;
-		flex-direction: column;
-	}
-	.leftSide .bigLogo,.rightSide .donateLink {
-		text-align: center;
-	}
 }
+  @media (max-width:991px) {
+    .home-page {
+      background-image: url(../images/mobile-bg.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      z-index: -10;
+      min-height: 100vh
+    }
 
+    .navbar-light .navbar-toggler i {
+      color: #609eb3
+    }
 
-@media (max-width: 767px) {
-	.rightSide .bottomMenu {
-		flex-direction: column;
-	}
-	.leftSide .centerLogoMarty img {
-		position: absolute;
-		top: 0px;
-		max-width: 250px;
-		z-index: 0;
-		left: -200px;
-	}
-	.rightSide .footerBottomLogo img {
-		max-width: 100%;
-	}
-}
+    .navbar-light .navbar-toggler,
+    .navbar-light .navbar-toggler:focus {
+      border: none;
+      outline: 0
+    }
 
-@media (max-width: 575px) {
-	.leftSide .centerLogoMarty img {
-		top: 0px;
-		right: 0px;
-		max-width: 200px;
-		z-index: 0;
-		left: 50%;
-		margin-left: -70px;
-	}
-	.rightSide .detailText {
-		padding: 0;
-	}
-	.leftSide ul.nav li a {
-		color: #fff;
-	}
-	.mainDiv {
-		background-image: url("../images/bg-main.jpg");
-	}
-	.rightSide .heroHeading,.rightSide .youthImage,.rightSide .socialLinksIcons {
-		text-align: center;
-	}
-	.rightSide .socialLinksIcons .socialList {
-		justify-content: center;
-		top: 0;
-		position: relative;
-		flex-direction: row;
-	}
-	.rightSide .bottomMenu ul.nav {
-		justify-content: center;
-	}
-	.rightSide .bottomMenu .bottomLogoDonate {
-		margin-left: 0;
-		margin-top: 20px;
-	}
-}
+    .leftSide ul.nav {
+      padding: 15px 0 0 0;
+      flex-direction: column
+    }
+
+    .leftSide .bigLogo,
+    .rightSide .donateLink {
+      text-align: center
+    }
+  }
+
+  @media (max-width:767px) {
+    .rightSide .bottomMenu {
+      flex-direction: column
+    }
+
+    .leftSide .centerLogoMarty img {
+      position: absolute;
+      top: 0;
+      max-width: 250px;
+      z-index: 0;
+      left: -200px
+    }
+
+    .rightSide .footerBottomLogo img {
+      max-width: 100%
+    }
+  }
+
+  @media (max-width:575px) {
+    .leftSide .centerLogoMarty img {
+      top: 0;
+      right: 0;
+      max-width: 200px;
+      z-index: 0;
+      left: 50%;
+      margin-left: -70px
+    }
+
+    .rightSide .detailText {
+      padding: 0
+    }
+
+    .leftSide ul.nav li a {
+      color: #fff
+    }
+
+    .home-page {
+      background-image: url(../images/bg-main.jpg)
+    }
+
+    .rightSide .heroHeading,
+    .rightSide .socialLinksIcons,
+    .rightSide .youthImage {
+      text-align: center
+    }
+
+    .rightSide .socialLinksIcons .socialList {
+      justify-content: center;
+      top: 0;
+      position: relative;
+      flex-direction: row
+    }
+
+    .rightSide .bottomMenu ul.nav {
+      justify-content: center
+    }
+
+    .rightSide .bottomMenu .bottomLogoDonate {
+      margin-left: 0;
+      margin-top: 20px
+    }
+  }
