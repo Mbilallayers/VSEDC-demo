@@ -821,7 +821,30 @@ body {
   margin-top: 20.3%;
   margin-left: 80.9%;
 }
-
+.horizental-scroll {
+    color: #FFF;
+    border: 1px solid;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    position: absolute;
+    bottom: 6%;
+    right: 20px;
+    border-radius: 100%;
+    line-height: 2.2;
+    background: #7620c9;
+    animation: pulse 1s infinite;
+}
+@keyframes pulse {
+  0% {
+    right: 20px;
+    background: #fff;
+    color: #7620c9;
+  }
+  100% {
+      right: 25px;
+  }
+}
 #fundrasing .circle-price .f-image {
   margin-top: 12.7%;
   margin-left: 84%;
@@ -993,6 +1016,9 @@ body {
   }
 
   @media (max-width:3000px) and (min-width:1400px) {
+    .horizental-scroll {
+    bottom: 10.4%;
+  }
     #fundrasing .dotted-circle {
     margin-left: 51%;
     width: 100%;

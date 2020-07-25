@@ -36,7 +36,7 @@
             slidesPerView: 'auto',
             freeMode: true,
             mousewheel: {
-                sensitivity: 5
+                sensitivity: 3
             },
             grabCursor: true,
             breakpoints: {
