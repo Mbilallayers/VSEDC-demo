@@ -33,6 +33,10 @@
 
 
         new Swiper('#home', {
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                draggable: false,
+            },
             slidesPerView: 'auto',
             freeMode: true,
             mousewheel: {
