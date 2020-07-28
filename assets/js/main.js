@@ -33,10 +33,14 @@
 
 
         new Swiper('#home', {
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                draggable: false,
+            },
             slidesPerView: 'auto',
             freeMode: true,
             mousewheel: {
-                sensitivity: 3
+                sensitivity: 5
             },
             grabCursor: true,
             breakpoints: {
