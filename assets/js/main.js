@@ -7,26 +7,25 @@
         easing: 'ease-in-out'
         //  once: true
     });
+// Page Scroll
+jQuery(document).ready(function ($) {
+    $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+            || location.hostname == this.hostname) {
+
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top - 0
+                }, 1000);
+                return false;
+            }
+        }
+    });
+});
 
 
-    // for performance only watch for:
-    // 1. mousemove
-    // 2. the animation of the swiper is in progress
-    // requestAnimationFrame(mousePositionTrack);
-
-    // if (!Modernizr.touchevents) {
-
-    //     $(document).on('mousemove', function(event) {
-    //         window.mousePosition.x = event.pageX;
-    //         window.mousePosition.y = event.pageY;
-
-    //         if ( window.swiper ) {
-    //             updateColor(window.swiper);
-    //         }
-
-    //     });
-
-    // }
 
 
     // $(document).ready(function() {
