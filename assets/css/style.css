@@ -81,7 +81,7 @@ body {
 
 .fundrasing-page .navbar a img.logoTopMenu,
 .leftSide .navbar a img.logoTopMenu {
-  max-width: 65px
+  max-width: 100px
 }
 
 .fundrasing-page ul.nav,
@@ -319,7 +319,7 @@ body {
 
 .fundrasing-page .donateLink img,
 .rightSide .donateLink img {
-  max-width: 80px;
+  max-width: 90px;
   z-index: 10
 }
 
@@ -345,7 +345,7 @@ body {
 
 .rightSide .mentorImage img,
 .rightSide .youthImage img {
-  max-width: 55%;
+  max-width: 67%;
   z-index: 10
 }
 
@@ -380,7 +380,7 @@ body {
 }
 
 .rightSide .footerBottomLogo img {
-  max-width: 120px;
+  max-width: 150px;
   z-index: 10
 }
 
@@ -945,13 +945,20 @@ body {
 }
 
 .fundrasing-page .mislaLogo {
-  width: 70%;
+  width: 80%;
   margin-top: 175px;
 }
 
 .fundrasing-page .bottomMenu {
-  margin-top: 40px;
+  margin-top: 80px;
 
+}
+
+.fundrasing-page .bottomMenu p{
+  color: #fff;
+}
+.fundrasing-page .bottomMenu p a{
+  color: #fff;
 }
 
 /* End secoend page */
@@ -1021,11 +1028,11 @@ body {
     max-width: 70px;
 }
 .fundrasing-page .navbar a img.logoTopMenu, .leftSide .navbar a img.logoTopMenu {
-    max-width: 71px;
+    max-width: 100px;
 }
 .fundrasing-page ul.nav li a, .leftSide ul.nav li a {
     margin: 8px 10px;
-    font-size: 16px;
+    font-size: 18px;
   }
   .leftSide .bigLogo img {
     max-height: 75px;
@@ -1046,7 +1053,7 @@ body {
 }
 .rightSide .mentorImage img,
 .rightSide .youthImage img {
-  max-width: 55%;
+  max-width: 67%;
 }
 .rightSide .heroHeading h1 {
     font-size: 50px;
@@ -1065,11 +1072,12 @@ body {
     max-width: 30px;
   }
 .rightSide .detailText h3 {
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 26px;
     padding: 15px 0 0
   }
   .rightSide .footerBottomLogo img {
-    max-width: 160px;
+    max-width: 175px;
 }
 .fundrasing-page .bottomMenu ul.nav li a, .rightSide .bottomMenu ul.nav li a {
     font-size: 16px;
