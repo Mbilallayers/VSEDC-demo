@@ -5,8 +5,9 @@
     AOS.init({
         duration: 700,
         easing: 'ease-in-out'
-        //  once: true
     });
+    $("#sticker").sticky({topSpacing:0});
+
 // Page Scroll
 jQuery(document).ready(function ($) {
     $('a[href*=#]:not([href=#])').click(function() {
