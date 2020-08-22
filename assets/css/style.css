@@ -43,7 +43,8 @@ body {
 }
 
 .home-page {
-  background-image: url(../images/bg-main.jpg)
+  background-image: url(../images/bg-main.jpg);
+  padding-bottom: 40px;
 }
 
 .bg-flex {
@@ -63,15 +64,19 @@ body {
 }
 
 .fundrasing-page .logoTopMenu img,
-.home-page .leftSide .logoTopMenu img {
+.home-page .main-header .logoTopMenu img {
   max-width: 70px;
   z-index: 10
 }
 
-.fundrasing-page,
+
 .leftSide {
   padding: 10px 10px;
   z-index: 10
+}
+
+.fundrasing-page{
+  padding: 50px 10px 40px;
 }
 
 .fundrasing-page .navbar,
@@ -80,18 +85,18 @@ body {
 }
 
 .fundrasing-page .navbar a img.logoTopMenu,
-.leftSide .navbar a img.logoTopMenu {
+.main-header .navbar a img.logoTopMenu {
   max-width: 100px
 }
 
 .fundrasing-page ul.nav,
-.leftSide ul.nav {
+.main-header ul.nav {
   padding-left: 10px;
   z-index: 10
 }
 
 .fundrasing-page ul.nav li a,
-.leftSide ul.nav li a {
+.main-header ul.nav li a {
   margin: 8px 10px;
   font-size: 14px;
   font-weight: 600;
@@ -108,7 +113,7 @@ body {
 
 .fundrasing-page .bottomMenu ul.nav li a:before,
 .fundrasing-page ul.nav li a:before,
-.leftSide ul.nav li a:before,
+.main-header ul.nav li a:before,
 .rightSide .bottomMenu ul.nav li a:before {
   content: " ";
   position: absolute;
@@ -126,7 +131,7 @@ body {
 }
 
 .fundrasing-page ul.nav li,
-.leftSide ul.nav li {
+.main-header ul.nav li {
   display: inline-block;
   list-style: none;
   transition: background-color .3s;
@@ -135,7 +140,7 @@ body {
 
 .fundrasing-page .bottomMenu ul.nav li:hover a:before,
 .fundrasing-page ul.nav li:hover a:before,
-.leftSide ul.nav li:hover a:before,
+.main-header ul.nav li:hover a:before,
 .rightSide .bottomMenu ul.nav li:hover a:before {
   width: 100%;
   opacity: 1;
@@ -145,7 +150,7 @@ body {
 
 .fundrasing-page .bottomMenu ul.nav li a.active:before,
 .fundrasing-page ul.nav li a.active:before,
-.leftSide ul.nav li a.active:before,
+.main-header ul.nav li a.active:before,
 .rightSide .bottomMenu ul.nav li a.active:before {
   background-color: #e49523;
   width: 100%;
@@ -155,7 +160,7 @@ body {
 
 .fundrasing-page .bottomMenu ul.nav li a.active,
 .fundrasing-page ul.nav li a.active,
-.leftSide ul.nav li a.active,
+.main-header ul.nav li a.active,
 .rightSide .bottomMenu ul.nav li a.active {
   color: #e49523;
   z-index: 10
@@ -163,7 +168,7 @@ body {
 
 .fundrasing-page .bottomMenu ul.nav li:hover a,
 .fundrasing-page ul.nav li:hover a,
-.leftSide ul.nav li:hover a,
+.main-header ul.nav li:hover a,
 .rightSide .bottomMenu ul.nav li:hover a {
   color: #a30ae9;
   z-index: 10
@@ -237,7 +242,9 @@ body {
 .leftSide .row .imageBox .topIcon.financeBox h2 {
   color: #de8b22
 }
-
+.main-header {
+  padding: 0 13px;
+}
 .leftSide .row .imageBox .topIcon.resiliencyBox h2 {
   color: #6f2ca9
 }
@@ -387,16 +394,226 @@ body {
 .is-sticky header {
   background-color: #FFF;
   z-index: 100!important;
+
+  box-shadow: 0 1px 3px rgba(0,0,0,.15);
 }
-.is-sticky header img.logoTopMenu{
-  max-height: 80px!important;
-}
+
 .fundrasing-page .socialLinksIcons,
 .rightSide .socialLinksIcons {
   position: relative;
   z-index: 10
 }
+.ml-8 {
+  margin-left: 24%;
+}
 
+.fundraising-circle {
+  width: 800px;
+  margin: 40px auto;
+  text-align: center;
+}
+.fundraising-circle li{
+  width: 140px;
+  height: 140px;
+  text-align: center;
+  border: 1px solid #8727d9;
+  border-radius: 100%;
+  display: inline-block;
+  position: relative;
+  margin: 0 12px -16px;
+}
+.fundraising-circle li::after {
+  content: '';
+  width: 130px;
+  height: 130px;
+  display: block;
+  top: 0px;
+  position: absolute;
+  border-radius: 100%;
+  margin: 4px;
+  background: linear-gradient(to right, #5f26a5, #8727d9);
+}
+
+.fundraising-circle li::before {
+  content: '';
+  width: 120px;
+  height: 120px;
+  display: block;
+  top: 0px;
+  position: absolute;
+  border-radius: 100%;
+  margin: 9px;
+  background: #f4f4f4;
+  z-index: 1;
+}
+.fundraising-circle .fc-single-circle{
+  border-radius: 100%;
+  padding: 25px 1px;
+  background: #fff;
+  margin: 15px;
+  z-index: 1;
+  position: relative;
+}
+.fundraising-circle .fc-single-circle::after{
+  content: '';
+  position: absolute;
+  display: block;
+  height: 86%;
+  width: 86%;
+  background: #FFF;
+  border-radius: 100%;
+  top: 0px;
+  left: 0;
+  margin: 7px;
+  box-shadow: 5px 4px 7px 0px #dfdfdfc4;
+}
+.fundraising-circle .fc-single-circle::before{
+  content: '';
+  position: absolute;
+  display: block;
+  height: 81%;
+  width: 81%;
+  background: #fff;
+  border: 1px solid #8727d9;
+  box-shadow: inset 1px 1px 7px 3px #6626ae12;
+  border-radius: 100%;
+  top: 1px;
+  left: 1px;
+  margin: 9px;
+  z-index: 1;
+}
+
+.fundraising-circle .fc-single-circle h5{
+  text-transform: uppercase;
+  font-family: "Dock11 Heavy";
+  font-size: 14px;
+  color: #6f2ca9;
+  z-index: 22;
+  margin-bottom: 0;
+}
+
+.fundraising-circle .fc-single-circle p{
+  font-family: "Nunito Bold";
+  color: #3b3a4d;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.fundraising-circle .fc-single-circle .inner-circle{
+  padding-top: 20px;
+  position: relative;
+  z-index: 100;
+}
+.fundraising-circle .fc-single-circle .arrow-right,.fundraising-circle .fc-single-circle .arrow-left{
+    position: absolute;
+    bottom: -65px;
+    height: 120px;
+    width: 120px;
+}
+.fundraising-circle .fc-single-circle .arrow-right{
+  right: -35px;
+}
+.fundraising-circle .fc-single-circle .arrow-left{
+  left: -37px;
+}
+/*-----------------------*/
+
+.fundraising-circle li.music,.fundraising-circle .fc-single-circle::before {
+  border-color: #88bbfa;
+}
+.fundraising-circle li.music::after {
+  background: linear-gradient(to right, #6a86ef, #8fc8fc);
+}
+.fundraising-circle li.music .fc-single-circle h5 {
+  color: #7ba5f5;
+}
+
+/*-----------------------*/
+
+.fundraising-circle li.coding,.fundraising-circle li.coding .fc-single-circle::before {
+  border-color: #61abbd;
+}
+.fundraising-circle li.coding::after {
+  background: linear-gradient(to right, #69bbbc, #5393be);
+}
+.fundraising-circle li.coding .fc-single-circle h5 {
+  color: #3a6075;
+}
+
+/*-----------------------*/
+
+.fundraising-circle li.branding,.fundraising-circle li.branding .fc-single-circle::before {
+  border-color: #673dce;
+}
+.fundraising-circle li.branding::after {
+  background: linear-gradient(to right, #7161e2, #673dce);
+}
+.fundraising-circle li.branding .fc-single-circle h5 {
+  color: #4709d2;
+}
+
+/*-----------------------*/
+
+.fundraising-circle li.finance,.fundraising-circle li.finance .fc-single-circle::before {
+  border-color: #ecb22f;
+}
+.fundraising-circle li.finance::after {
+  background: linear-gradient(to right, #eed454, #ecb22f);
+}
+.fundraising-circle li.finance .fc-single-circle h5 {
+  color: #de8b22;
+}
+/*-----------------------*/
+
+.fundraising-circle li.media,.fundraising-circle li.media .fc-single-circle::before {
+  border-color: #9ff1f9;
+}
+.fundraising-circle li.media::after {
+  background: linear-gradient(to right, #64b1c8, #9ff1f9);
+}
+.fundraising-circle li.media .fc-single-circle h5 {
+  color: #1ac1e4;
+}
+/*-----------------------*/
+
+.fundraising-circle li.design,.fundraising-circle li.design .fc-single-circle::before {
+  border-color: #97d855;
+}
+.fundraising-circle li.design::after {
+  background: linear-gradient(to right, #d2db51, #78d45a);
+}
+.fundraising-circle li.design .fc-single-circle h5 {
+  color: #8ac426;
+}
+
+/*-------------------------*/
+.icon-box-right {
+    position: absolute;
+    top: -22px;
+    right: -25px;
+}
+.icon-box-left {
+    position: absolute;
+    top: -22px;
+    left: -33px;
+}
+.icon-box-ld {
+    position: absolute;
+    bottom: -16px;
+    left: -33px;
+}
+.icon-box-rd {
+    position: absolute;
+    bottom: -16px;
+    right: -33px;
+}
+.icon-box-cd {
+    position: absolute;
+    bottom: -42px;
+    left: 21px;
+}
+.icon-box-left img,.icon-box-right img,.icon-box-cd img,.icon-box-ld img,.icon-box-rd img {
+    max-width: 65px;
+}
 .rightSide .socialLinksIcons .socialList {
   list-style: none;
   display: flex;
@@ -470,10 +687,6 @@ body {
 
 .fundrasing-page {
   background-image: url(../images/fundrasing-bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  min-height: 100vh;
 }
 
 
@@ -539,280 +752,7 @@ body {
   margin-top: 8px;
 }
 
-/* =========== Start Circle section ========= */
-.fundrasing-page .circle-price {
-  display: block;
-  margin-top: 20px;
-}
 
-.fundrasing-page .circle-price .img-fluid {
-  display: block;
-  position: absolute;
-  margin-left: 29%;
-  margin-right: auto;
-  width: 62%;
-  z-index: 10;
-}
-
-/* Start Ring making */
-
-/* inner ring */
-
-.fundrasing-page .ring {
-  width: 8.5em;
-  height: 8.5em;
-  border: .3em solid #757575;
-  border-radius: 50%;
-  position: absolute;
-}
-
-.fundrasing-page .ring1,
-.fundrasing-page .ring2,
-.fundrasing-page .ring3,
-.fundrasing-page .ring4 {
-  top: 12%;
-}
-
-.fundrasing-page .ring5,
-.fundrasing-page .ring6,
-.fundrasing-page .ring7 {
-  top: 62%;
-}
-
-.fundrasing-page .ring1 {
-  left: 33.8%;
-}
-
-.fundrasing-page .ring2 {
-  left: 49%;
-}
-
-.fundrasing-page .ring3 {
-  left: 64.35%;
-}
-
-.fundrasing-page .ring4 {
-  left: 79.6%;
-}
-
-.fundrasing-page .ring5 {
-  left: 41.5%;
-}
-
-.fundrasing-page .ring6 {
-  left: 56.7%;
-}
-
-.fundrasing-page .ring7 {
-  left: 71.95%;
-}
-
-/* Outer ring */
-
-.fundrasing-page .ringsm {
-  width: 9.2em;
-  height: 9.2em;
-  border: .1em solid #757575;
-  border-radius: 50%;
-  position: absolute;
-}
-
-.fundrasing-page .ringsm1,
-.fundrasing-page .ringsm2,
-.fundrasing-page .ringsm3,
-.fundrasing-page .ringsm4 {
-  top: 9.6%;
-}
-
-.fundrasing-page .ringsm5,
-.fundrasing-page .ringsm6,
-.fundrasing-page .ringsm7 {
-  top: 59.6%;
-}
-
-.fundrasing-page .ringsm1 {
-  left: 33.25%;
-}
-
-.fundrasing-page .ringsm2 {
-  left: 48.54%;
-}
-
-.fundrasing-page .ringsm3 {
-  left: 63.87%;
-}
-
-.fundrasing-page .ringsm4 {
-  left: 79.12%;
-}
-
-.fundrasing-page .ringsm5 {
-  left: 41%;
-}
-
-.fundrasing-page .ringsm6 {
-  left: 56.2%;
-}
-
-.fundrasing-page .ringsm7 {
-  left: 71.45%;
-}
-
-/* End Ring making */
-
-/* Name and price */
-.fundrasing-page .circle-price p {
-  position: absolute;
-  text-transform: uppercase;
-  font-family: "Dock11 Heavy";
-  font-size: 90%;
-  z-index: 99;
-}
-
-.fundrasing-page .circle-price .price {
-  font-family: "Nunito Bold";
-  font-size: 100%;
-  color: #3b3a4d;
-}
-
-.fundrasing-page .circle-price .c-text,
-.fundrasing-page .circle-price .f-text,
-.fundrasing-page .circle-price .m-text,
-.fundrasing-page .circle-price .r-text {
-  margin-top: 5.5%;
-}
-
-.fundrasing-page .circle-price .c-price,
-.fundrasing-page .circle-price .f-price,
-.fundrasing-page .circle-price .m-price,
-.fundrasing-page .circle-price .r-price {
-  margin-top: 7.3%;
-}
-
-.fundrasing-page .circle-price .b-text,
-.fundrasing-page .circle-price .d-text,
-.fundrasing-page .circle-price .me-text {
-  margin-top: 16.8%;
-}
-
-.fundrasing-page .circle-price .b-price,
-.fundrasing-page .circle-price .d-price,
-.fundrasing-page .circle-price .me-price {
-  margin-top: 18.4%;
-}
-
-.fundrasing-page .circle-price .r-text {
-  margin-left: 32%;
-  color: #6f2ca9;
-}
-
-.fundrasing-page .circle-price .m-text {
-  margin-left: 49.8%;
-  color: #7ba5f5;
-}
-
-.fundrasing-page .circle-price .c-text {
-  margin-left: 65.5%;
-  color: #3a6075;
-}
-
-.fundrasing-page .circle-price .f-text {
-  margin-left: 81.4%;
-  color: #de8b22;
-}
-
-.fundrasing-page .circle-price .b-text {
-  margin-left: 40.5%;
-  color: #4709d2;
-}
-
-.fundrasing-page .circle-price .me-text {
-  margin-left: 58%;
-  color: #1ac1e4;
-}
-
-.fundrasing-page .circle-price .d-text {
-  margin-left: 74%;
-  color: #de8b22;
-}
-
-.fundrasing-page .circle-price .r-price {
-  margin-left: 33.3%
-}
-
-.fundrasing-page .circle-price .m-price {
-  margin-left: 49.5%;
-}
-
-.fundrasing-page .circle-price .c-price {
-  margin-left: 65.4%;
-}
-
-.fundrasing-page .circle-price .f-price {
-  margin-left: 81.5%;
-}
-
-.fundrasing-page .circle-price .b-price {
-  margin-left: 41%;
-}
-
-.fundrasing-page .circle-price .me-price {
-  margin-left: 57.2%;
-}
-
-.fundrasing-page .circle-price .d-price {
-  margin-left: 74%
-}
-
-.fundrasing-page .b-image,
-.fundrasing-page .c-image,
-.fundrasing-page .d-image,
-.fundrasing-page .f-image,
-.fundrasing-page .m-image,
-.fundrasing-page .me-image,
-.fundrasing-page .r-image {
-  position: absolute;
-  z-index: 9999;
-}
-
-.fundrasing-page .circle-price .b-image,
-.fundrasing-page .circle-price .c-image,
-.fundrasing-page .circle-price .d-image,
-.fundrasing-page .circle-price .m-image,
-.fundrasing-page .circle-price .me-image,
-.fundrasing-page .circle-price .r-image {
-  width: 2%
-}
-
-.fundrasing-page .circle-price .r-image {
-  margin-top: 1.3%;
-  margin-left: 38.9%;
-}
-
-.fundrasing-page .circle-price .c-image {
-  margin-top: 1.8%;
-  margin-left: 62%;
-}
-
-.fundrasing-page .circle-price .m-image {
-  margin-top: 12.7%;
-  margin-left: 50.8%;
-}
-
-.fundrasing-page .circle-price .b-image {
-  margin-top: 20.2%;
-  margin-left: 37.1%;
-}
-
-.fundrasing-page .circle-price .me-image {
-  margin-top: 20.4%;
-  margin-left: 64.8%;
-}
-
-.fundrasing-page .circle-price .d-image {
-  margin-top: 20.3%;
-  margin-left: 80.9%;
-}
 .horizental-scroll {
   color: #FFF;
   border: 1px solid;
@@ -836,11 +776,6 @@ body {
   100% {
     right: 25px;
   }
-}
-.fundrasing-page .circle-price .f-image {
-  margin-top: 12.7%;
-  margin-left: 84%;
-  width: 1%;
 }
 
 .fundrasing-page .socialLinksIcons .socialList {
@@ -891,6 +826,17 @@ body {
   text-transform: uppercase;
   position: absolute;
   top: 18%;
+}
+
+@media (max-width: 1236px) {
+  .ml-8 {
+    margin-left: 20%;
+  }
+}
+@media (max-width: 1100px) {
+  .ml-8 {
+    margin-left: 10%;
+  }
 }
 
 .fundrasing-page .title1 {
@@ -1005,16 +951,6 @@ body {
     bottom: 10.4%;
   }
 
-  .fundrasing-page .circle-price p {
-
-    font-size: 18px;
-  }
-  .fundrasing-page .circle-price .price {
-    font-size: 18px;
-  }
-  .fundrasing-page .circle-price .r-price {
-    margin-left: 33.3%;
-  }
   .fundrasing-page .bottomMenu {
     margin-top: 170px;
   }
@@ -1078,11 +1014,7 @@ body {
   .fundrasing-page .socialLinksIcons .socialList li a img, .rightSide .socialLinksIcons .socialList li a img {
     max-width: 30px;
   }
-  .rightSide .detailText h3 {
-    font-size: 20px;
-    line-height: 26px;
-    padding: 15px 0 0
-  }
+
   .rightSide .footerBottomLogo img {
     max-width: 175px;
   }
@@ -1094,6 +1026,29 @@ body {
   }
 }
 @media (max-width:991px) {
+  .fundraising-circle {
+    width: 100%;
+  }
+  .fundrasing-page .socialLinksIcons .socialList {
+    display: block;
+    position: relative;
+    left: 0;
+  }
+  .fundrasing-page .socialLinksIcons .socialList li{
+    display: inline-block;
+  }
+  .fundrasing-page .mislaLogo {
+    width: 0;
+  }
+  .fundrasing-page .mislaLogo {
+    margin-top: 20px;
+  }
+  .tx-center ,  .fundrasing-page .socialLinksIcons .socialList{
+    text-align: center;
+  }
+  .ml-8,.ml-20 {
+    margin-left: 0%;
+  }
   .fundrasing-page .youthImage img,.fundrasing-page .mentorImage img {
     margin-left: 0;
   }
@@ -1109,7 +1064,7 @@ body {
   .mislaLogo img {
     max-width: 60%
   }
-  .fundrasing-page ul.nav li, .leftSide ul.nav li {
+  .fundrasing-page ul.nav li, .main-header ul.nav li {
     width: 100%;
   }
   .fundrasing-page .bottomMenu{
@@ -1144,7 +1099,7 @@ body {
     outline: 0
   }
 
-  .leftSide ul.nav {
+  .main-header ul.nav {
     padding: 15px 0 0 0;
     flex-direction: column
   }
@@ -1155,7 +1110,39 @@ body {
   }
 }
 
+
 @media (max-width:767px) {
+  .fundraising-circle li.finance .icon-box-cd {
+    top: -25px;
+    right: -75px;
+  }
+  .fundraising-circle li.branding .icon-box-ld ,.fundraising-circle li.design .icon-box-rd {
+    bottom: -42px;
+    left: 21px;
+    right: auto;
+  }
+  .rightSide .mentorImage img, .rightSide .youthImage img {
+    margin-bottom: 30px;
+  }
+  .fundraising-circle li.media .icon-box-rd {
+    top: -22px;
+    right: auto;
+    left: -33px;
+  }
+  .fundrasing-page .bottomMenu .bottomLogoDonate a img{
+    max-width: 100%;
+  }
+
+  .fundrasing-page .bottomMenu {
+    text-align: center;
+    display: block;
+  }
+  .fundraising-circle li {
+    margin: 0 10px 44px;
+  }
+  .ds-none,.fundraising-circle .fc-single-circle .arrow-right,.fundraising-circle .fc-single-circle .arrow-left {
+    display: none;
+  }
   .ml-20 {
     margin-left: 0;
   }
@@ -1163,7 +1150,8 @@ body {
     flex-direction: column
   }
   .fundrasing-page .bigLogo img {
-    width: 70%;margin-top: 20px;
+    width: 100%;
+    margin-top: 20px;
   }
   .leftSide .centerLogoMarty img {
     position: absolute;
