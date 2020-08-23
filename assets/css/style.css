@@ -688,7 +688,37 @@ body {
 .fundrasing-page {
   background-image: url(../images/fundrasing-bg.jpg);
 }
+.services-page {
+  background-image: url(../images/services-bg.jpg);
+}
 
+.services-box {
+  margin-bottom: 40px;
+}
+.services-box img{
+  margin-bottom: 20px;
+  max-height: 232px;
+}
+.services-box h2{
+  font-size: 33px;
+  font-family: "Dock11 Heavy";
+  color: #51d6e3;
+}
+.services-box.services-st h2{
+  color: #a1f215;
+}
+.services-box.services-design h2{
+  color: #6838c4;
+}
+.services-box.services-pd h2{
+  color: #ff9900;
+}
+.services-box p{
+  font-size: 18px;
+  font-family: "Nunito Bold";
+  font-weight: 600;
+  color: #3b3a4d;
+}
 
 .fundrasing-page nav {
   margin-left: 25px;
@@ -705,7 +735,7 @@ body {
 .fundrasing-page .bigLogo img {
   display: block;
   margin: auto;
-  width: 50%;
+  width: 60%;
 }
 
 /* upper heading circle */
