@@ -79,10 +79,6 @@ body {
   padding: 50px 10px 40px;
 }
 
-.fundrasing-page .navbar,
-.leftSide .navbar {
-  padding: 0
-}
 
 .fundrasing-page .navbar a img.logoTopMenu,
 .main-header .navbar a img.logoTopMenu {
@@ -98,7 +94,7 @@ body {
 .fundrasing-page ul.nav li a,
 .main-header ul.nav li a {
   margin: 8px 10px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   font-family: "Open Sans";
   line-height: 16px;
@@ -175,11 +171,19 @@ body {
 }
 
 .leftSide .bigLogo img {
-  max-height: 90px;
+  max-height: 100px;
   margin: auto;
   text-align: center
 }
-
+.morelink.less {
+  display: block;
+}
+.morelink {
+  color: #3b3a4d;
+}
+.morecontent span {
+  display: none;
+}
 .leftSide .bigLogo {
   padding: 10px 0;
   text-align: center
@@ -358,13 +362,13 @@ body {
 
 .rightSide .detailText {
   font-family: "Nunito Bold";
-  padding: 0 40px;
+  padding: 0 0 0 40px;
   z-index: 10
 }
 
 .rightSide .detailText h3 {
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 600;
   padding: 10px 0 0;
   color: #fff;
   z-index: 10
