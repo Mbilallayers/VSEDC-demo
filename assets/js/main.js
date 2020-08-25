@@ -59,44 +59,8 @@ $(".morelink").click(function(){
 });
 
 
-
-
-    // $(document).ready(function() {
-
-
-    //     new Swiper('#home', {
-    //         scrollbar: {
-    //             el: '.swiper-scrollbar',
-    //             draggable: false,
-    //         },
-    //         slidesPerView: 'auto',
-    //         freeMode: true,
-    //         mousewheel: {
-    //             sensitivity: 5
-    //         },
-    //         grabCursor: true,
-    //         breakpoints: {
-    //             2400: {
-    //                 slidesPerView: 'auto',
-    //                 spaceBetween: 0,
-    //                 slidesOffsetAfter: 0,
-    //                 slidesPerGroup: 1
-    //             },
-    //             1023: {
-    //                 freeMode: true,
-    //                 slidesPerView: 'auto',
-    //                 spaceBetween: 0,
-    //                 slidesOffsetAfter: 0,
-    //                 slidesPerGroup: 1
-    //             }
-    //         }
-    //     });
-
-
-
-    //     $('.swiper-container').removeClass('is-invisible');
-
-
-    // });
-
 })(jQuery);
+
+$(function() {
+    $(".rotate-badge h1").lettering();
+});
