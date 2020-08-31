@@ -85,7 +85,9 @@ a:hover {
   max-width: 70px;
   z-index: 10
 }
-
+.navbar-light .navbar-brand{
+  order: 2;
+}
 
 .leftSide {
   padding: 10px 10px;
@@ -1000,11 +1002,19 @@ a:hover {
 .contact-page .bottomMenu {
   margin-top: 0;
 }
-.fundrasing-page .bottomMenu p{
+
+.fundrasing-page .bottomMenu p,.fundrasing-page .bottomMenu p a{
   color: #fff;
 }
-.fundrasing-page .bottomMenu p a{
-  color: #fff;
+.mt40{
+  margin-top: 40px;
+}
+.contact-page .bigLogo img{
+max-width: 210px;
+  margin-bottom: 20px;
+}
+.white-color a{
+  color: #ee933e;
 }
 
 /* End secoend page */
@@ -1115,6 +1125,9 @@ a:hover {
   }
 }
 @media (max-width:991px) {
+   .navbar-light .navbar-brand{
+    order: inherit;
+  }
   .main-header {
     padding: 0 13px;
     background: #FFF;
