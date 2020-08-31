@@ -7,6 +7,17 @@ body {
   font-family: "Montserrat Regular"
 }
 
+
+a {
+  -webkit-transition: 0.4s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+  -ms-transiion: 0.4s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+  -moz-transition: 0.4s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+  transition: 0.4s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+}
+a:hover {
+  text-decoration: none;
+}
+
 @font-face {
   font-family: "Dock11 Heavy";
   src: url(../fonts/heavy_dock11.otf)
@@ -49,7 +60,8 @@ body {
 
 .contact-page {
   background-image: url(../images/bg-main.jpg)!important;
-  padding-bottom: 40px; 
+  padding-bottom: 40px;
+  min-height: 100%!important;
 }
 
 .bg-flex {
@@ -184,7 +196,7 @@ body {
   display: block;
 }
 .morelink {
-  color: #3b3a4d;
+  color: #8157e0;
 }
 .morecontent span {
   display: none;
@@ -379,7 +391,7 @@ body {
   z-index: 10
 }
 
-.rightSide .footerBottomLogo {
+.footerBottomLogo {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -389,13 +401,13 @@ body {
   margin-top: 10px
 }
 
-.rightSide .footerBottomLogo .martyLogo,
-.rightSide .footerBottomLogo .mislaLogo {
+.footerBottomLogo .martyLogo,
+.footerBottomLogo .mislaLogo {
   padding: 0 20px;
   z-index: 10
 }
 
-.rightSide .footerBottomLogo img {
+.footerBottomLogo img {
   max-width: 150px;
   margin-bottom: 20px;
   z-index: 10
@@ -628,20 +640,29 @@ body {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 27px;
+  top: 77px;
   left: 45px;
   z-index: 10
 }
 
 .fundrasing-page .socialLinksIcons .socialList li,
 .rightSide .socialLinksIcons .socialList li {
-  padding: 13px
+  padding: 8px 13px;
+  text-align: center;
 }
 
-.fundrasing-page .socialLinksIcons .socialList li a img,
-.rightSide .socialLinksIcons .socialList li a img {
-  max-width: 23px;
-  z-index: 10
+.rightSide .socialLinksIcons .socialList li a {
+  font-size: 22px;color: #FFF;
+}
+.rightSide .socialLinksIcons .socialList li:hover a {
+  color: #fc9908;
+}
+.fundrasing-page .socialLinksIcons .socialList li a {
+  font-size: 22px;
+  color: #fc9908;
+}
+.fundrasing-page .socialLinksIcons .socialList li:hover a {
+  color: #8157e0;
 }
 
 .fundrasing-page .bottomMenu,
@@ -829,6 +850,34 @@ body {
   left: 45px;
   z-index: 10
 }
+.custom-form .form-control {
+  padding: 1.575rem .75rem;
+  color: #fff;
+  background: linear-gradient( to right, #6a07bf, #66a8f2);
+  border: 1px solid #6782e6;
+  font-weight: 300;
+  font-size: 14px;
+}
+.btn-primary {
+  background: linear-gradient( #6a07bf, #66a8f2);
+  padding: 10px 30px;
+}
+.btn-primary:hover {
+  background: linear-gradient( #66a8f2, #6a07bf);
+  padding: 10px 30px;
+}
+.custom-form ::-moz-placeholder {
+  color: #ddd;
+}
+.custom-form :-moz-placeholder {
+  color: #ddd;
+}
+.custom-form ::-ms-input-placeholder {
+  color: #ddd;
+}
+.custom-form ::-webkit-input-placeholder {
+  color: #ddd ;
+}
 
 /* Youth and mentor section */
 
@@ -948,7 +997,9 @@ body {
   margin-top: 80px;
 
 }
-
+.contact-page .bottomMenu {
+  margin-top: 0;
+}
 .fundrasing-page .bottomMenu p{
   color: #fff;
 }
@@ -991,10 +1042,6 @@ body {
 @media (max-width:3000px) and (min-width:1400px) {
   .horizental-scroll {
     bottom: 10.4%;
-  }
-
-  .fundrasing-page .bottomMenu {
-    margin-top: 170px;
   }
   .fundrasing-page .title1, .fundrasing-page .title2 {
     top: 33%;
@@ -1057,7 +1104,7 @@ body {
     max-width: 30px;
   }
 
-  .rightSide .footerBottomLogo img {
+   .footerBottomLogo img {
     max-width: 175px;
   }
   .fundrasing-page .bottomMenu ul.nav li a, .rightSide .bottomMenu ul.nav li a {
@@ -1208,7 +1255,7 @@ body {
     left: -200px
   }
 
-  .rightSide .footerBottomLogo img {
+   .footerBottomLogo img {
     max-width: 100%
   }
 }
