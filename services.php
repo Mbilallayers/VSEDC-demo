@@ -27,10 +27,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" target="_blank"href="https://docs.google.com/forms/d/e/1FAIpQLSfkDpjkqh--MRnFMJhxXiMgqgyDY4q1PxCazHGQ5lgDGY5Hkg/viewform">Youth</a>
+                        <a class="nav-link" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfkDpjkqh--MRnFMJhxXiMgqgyDY4q1PxCazHGQ5lgDGY5Hkg/viewform">Youth</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" target="_blank" href="https://forms.gle/3TVE33u2DeFW6N8F7">Mentor</a>
@@ -40,7 +40,7 @@
                         <a class="nav-link" href="#fundraising">Fundraising</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="services.html">Services</a>
+                        <a class="nav-link active" href="services.php">Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" target="_blank" href="https://l.facebook.com/l.php?u=https%3A%2F%2Fcash.app%2F%24M1SLA%3Ffbclid%3DIwAR3jtW4AQJQ8-VTKbdlo8y6MZNeoBfF1bB6qxHYnaZVDs-8a349LJJE2ndc&h=AT3cFbNDmBsXdKyRQYNMmL2dFTKaSzufaughtlTu2SnOLrDL8Hl9CneEfKnWwGdgF-ALPt0Fwe-OI2_oqOJCds9KiaGaW34pBrFn5rngw7P_ngGG2z1FgGYmcLIEMaFkKzUkND_vThvI3yAwIT-_yvA">Donate</a>
@@ -142,7 +142,7 @@
                     <div class="bottomMenu">
                         <ul class="nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home</a>
+                                <a class="nav-link" href="index.php">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSfkDpjkqh--MRnFMJhxXiMgqgyDY4q1PxCazHGQ5lgDGY5Hkg/viewform">Youth</a>
@@ -155,7 +155,7 @@
                                 <a class="nav-link" href="#fundraising">Fundraising</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="services.html">Services</a>
+                                <a class="nav-link" href="services.php">Services</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" target="_blank" href="https://l.facebook.com/l.php?u=https%3A%2F%2Fcash.app%2F%24M1SLA%3Ffbclid%3DIwAR3jtW4AQJQ8-VTKbdlo8y6MZNeoBfF1bB6qxHYnaZVDs-8a349LJJE2ndc&amp;h=AT3cFbNDmBsXdKyRQYNMmL2dFTKaSzufaughtlTu2SnOLrDL8Hl9CneEfKnWwGdgF-ALPt0Fwe-OI2_oqOJCds9KiaGaW34pBrFn5rngw7P_ngGG2z1FgGYmcLIEMaFkKzUkND_vThvI3yAwIT-_yvA">Donate</a>
@@ -169,7 +169,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
         <!--  -->

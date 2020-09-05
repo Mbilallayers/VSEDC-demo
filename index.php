@@ -1,11 +1,47 @@
+<?php
+if (isset($_POST['submit']))
+{
 
+    require 'assets/PHPMailer/PHPMailerAutoload.php';
+    $mail = new PHPMailer;
+    $mail->isSMTP();
+    $mail->Host = 'smtp.gmail.com';
+    $mail->SMTPAuth = true;
+    $mail->Username = 'muhammadb083@gmail.com';
+    $mail->Password = 'dxlqdynadsshjtlu';
+    $mail->SMTPSecure = 'tls';
+    $mail->Port = 587;
+    $mail->SetFrom('cassie@gmail.com', 'Contact Form');
+    $mail->addReplyTo('muhammadb083@gmail.com', 'Contact Form');
+    $mail->addAddress('muhammadb083@gmail.com');
+    $mail->isHTML(true);
+    $mail->Subject = 'Contact Form';
+    $mail->Body =
+        '<b>Name:</b> ' . $_POST['name'] . '<br>' .
+        '<b>Email:</b> ' . $_POST['email'] . '<br>' .
+        '<b>Subject:</b> ' . $_POST['subject'] .'<br>' .
+        '<b>Message:</b> ' . $_POST['message'] .'<br>' .
+        '<br>This Email Send From https://misla.org/';
+
+
+    if(!$mail->send()) {
+        $result='<p style="color: #ff0000">Message could not be sent.</p>';
+        echo 'Mailer Error: ' . $mail->ErrorInfo;
+        header("Location: index.php");exit; //redirect to your home page
+    } else {
+        $result='<p style="color: #28a745">Message has been send.</p>';
+        header("Location: thankyou.php");exit; //redirect to form submit page
+    }
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Summer Camps</title>
+    <title>Summer Camps Thank you</title>
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/aos.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css" />
@@ -13,7 +49,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
-
 </head>
 
 <body>
@@ -30,10 +65,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="nav">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
+                        <a class="nav-link active" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" target="_blank"href="https://docs.google.com/forms/d/e/1FAIpQLSfkDpjkqh--MRnFMJhxXiMgqgyDY4q1PxCazHGQ5lgDGY5Hkg/viewform">Youth</a>
+                        <a class="nav-link" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfkDpjkqh--MRnFMJhxXiMgqgyDY4q1PxCazHGQ5lgDGY5Hkg/viewform">Youth</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" target="_blank" href="https://forms.gle/3TVE33u2DeFW6N8F7">Mentor</a>
@@ -44,7 +79,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="services.html">Services</a>
+                        <a class="nav-link" href="services.php">Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" target="_blank" href="https://l.facebook.com/l.php?u=https%3A%2F%2Fcash.app%2F%24M1SLA%3Ffbclid%3DIwAR3jtW4AQJQ8-VTKbdlo8y6MZNeoBfF1bB6qxHYnaZVDs-8a349LJJE2ndc&h=AT3cFbNDmBsXdKyRQYNMmL2dFTKaSzufaughtlTu2SnOLrDL8Hl9CneEfKnWwGdgF-ALPt0Fwe-OI2_oqOJCds9KiaGaW34pBrFn5rngw7P_ngGG2z1FgGYmcLIEMaFkKzUkND_vThvI3yAwIT-_yvA">Donate</a>
@@ -485,20 +520,21 @@
         </div>
         <div class="row">
             <div class="col-md-5">
-                <form class="custom-form text-center">
+                <?php echo (isset($result)) ? $result : ''; ?>
+                <form class="custom-form text-center" action="" method="post">
                     <div class="form-group">
-                        <input type="text" class="form-control" id="name" placeholder="Full Name" required>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control" id="email" placeholder="Email address" required>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email address" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="company" placeholder="Subject" required>
+                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control" rows="5" id="message" placeholder="Message"></textarea>
+                        <textarea class="form-control" rows="5" id="message" name="message" placeholder="Message"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">SEND</button>
+                    <button type="submit" name="submit" class="btn btn-primary">SEND</button>
                 </form>
 
             </div>
@@ -527,7 +563,7 @@
                 <div class="bottomMenu">
                     <ul class="nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link" href="index.php">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSfkDpjkqh--MRnFMJhxXiMgqgyDY4q1PxCazHGQ5lgDGY5Hkg/viewform">Youth</a>
@@ -540,7 +576,7 @@
                             <a class="nav-link" href="#fundraising">Fundraising</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="services.html">Services</a>
+                            <a class="nav-link" href="services.php">Services</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" target="_blank" href="https://l.facebook.com/l.php?u=https%3A%2F%2Fcash.app%2F%24M1SLA%3Ffbclid%3DIwAR3jtW4AQJQ8-VTKbdlo8y6MZNeoBfF1bB6qxHYnaZVDs-8a349LJJE2ndc&amp;h=AT3cFbNDmBsXdKyRQYNMmL2dFTKaSzufaughtlTu2SnOLrDL8Hl9CneEfKnWwGdgF-ALPt0Fwe-OI2_oqOJCds9KiaGaW34pBrFn5rngw7P_ngGG2z1FgGYmcLIEMaFkKzUkND_vThvI3yAwIT-_yvA">Donate</a>
