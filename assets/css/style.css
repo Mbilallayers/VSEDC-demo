@@ -163,20 +163,20 @@ a:hover {
   z-index: 10
 }
 
-.fundrasing-page .bottomMenu ul.nav li a.active:before,
-.fundrasing-page ul.nav li a.active:before,
-.main-header ul.nav li a.active:before,
-.rightSide .bottomMenu ul.nav li a.active:before {
+.fundrasing-page .bottomMenu ul.nav li.active a:before,
+.fundrasing-page ul.nav li.active a:before,
+.main-header ul.nav li.active a:before,
+.rightSide .bottomMenu ul.nav li.active a:before {
   background-color: #e49523;
   width: 100%;
   opacity: 1;
   z-index: 10
 }
 
-.fundrasing-page .bottomMenu ul.nav li a.active,
-.fundrasing-page ul.nav li a.active,
-.main-header ul.nav li a.active,
-.rightSide .bottomMenu ul.nav li a.active {
+.fundrasing-page .bottomMenu ul.nav li.active a,
+.fundrasing-page ul.nav li.active a,
+.main-header ul.nav li.active a,
+.rightSide .bottomMenu ul.nav li.active a {
   color: #e49523;
   z-index: 10
 }
@@ -343,7 +343,6 @@ a:hover {
 .fundrasing-page .donateLink,
 .rightSide .donateLink {
   padding: 20px 30px;
-  height: 100%;
   z-index: 10
 }
 
@@ -740,12 +739,15 @@ a:hover {
   -webkit-text-fill-color: #51d6e3;
 }
 .services-box.services-st h2{
+  -webkit-text-fill-color: #a1f215;
   color: #a1f215;
 }
 .services-box.services-design h2{
+  -webkit-text-fill-color: #6838c4;
   color: #6838c4;
 }
 .services-box.services-pd h2{
+  -webkit-text-fill-color: #ff9900;
   color: #ff9900;
 }
 .services-box p{
@@ -864,6 +866,7 @@ a:hover {
   background: linear-gradient( #6a07bf, #66a8f2);
   padding: 10px 30px;
 }
+
 .btn-primary:hover {
   background: linear-gradient( #66a8f2, #6a07bf);
   padding: 10px 30px;
@@ -1049,6 +1052,12 @@ max-width: 210px;
   }
 }
 
+@media (min-width:767px) {
+ .p-sm-0 {
+   padding: 0!important;
+ }
+}
+
 @media (max-width:3000px) and (min-width:1400px) {
   .horizental-scroll {
     bottom: 10.4%;
@@ -1128,6 +1137,7 @@ max-width: 210px;
    .navbar-light .navbar-brand{
     order: inherit;
   }
+
   .main-header {
     padding: 0 13px;
     background: #FFF;
@@ -1137,6 +1147,9 @@ max-width: 210px;
 }
   .fundraising-circle {
     width: 100%;
+  }
+  .fundrasing-page ul.nav {
+    display: inline-block;
   }
   .fundrasing-page .socialLinksIcons .socialList {
     display: block;
@@ -1185,8 +1198,8 @@ max-width: 210px;
   .fundrasing-page ul.nav {
     padding-left: 0;
   }
-  .home-page {
-    background-image: url(../images/mobile-bg.jpg);
+  .home-page,.contact-page {
+    background-image: url(../images/mobile-bg.jpg)!important;
     width: 100%;
     height: 100%;
     z-index: -10;
@@ -1216,12 +1229,23 @@ max-width: 210px;
     text-align: center
   }
 }
-
+.heading a {
+  color: #fc9908;
+}
 
 @media (max-width:767px) {
+  .white-color {
+    color: #FFF;
+  }
+  .p-sm-0 {
+    padding:0 0 40px 0!important;
+  }
   .fundraising-circle li.finance .icon-box-cd {
     top: -25px;
     right: -75px;
+  }
+  .custom-form {
+    margin-bottom: 40px;
   }
   .fundraising-circle li.branding .icon-box-ld ,.fundraising-circle li.design .icon-box-rd {
     bottom: -42px;
@@ -1247,7 +1271,7 @@ max-width: 210px;
   .fundraising-circle li {
     margin: 0 10px 44px;
   }
-  .ds-none,.fundraising-circle .fc-single-circle .arrow-right,.fundraising-circle .fc-single-circle .arrow-left {
+  .leftSide .row .imageBox h3 br,.ds-none,.fundraising-circle .fc-single-circle .arrow-right,.fundraising-circle .fc-single-circle .arrow-left {
     display: none;
   }
   .ml-20 {

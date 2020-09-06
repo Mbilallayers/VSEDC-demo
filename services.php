@@ -15,7 +15,7 @@
 
 </head>
 <body>
-<section class="fundrasing-page bg-flex p-0 services-page">
+<section class="fundrasing-page bg-flex p-sm-0 services-page">
     <header id="sticker" class="main-header">
         <nav class="navbar navbar-expand-lg navbar-light">
             <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -37,16 +37,18 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#fundraising">Fundraising</a>
+                        <a class="nav-link" href="index.php#fundraising">Fundraising</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="services.php">Services</a>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="services.php">Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" target="_blank" href="https://l.facebook.com/l.php?u=https%3A%2F%2Fcash.app%2F%24M1SLA%3Ffbclid%3DIwAR3jtW4AQJQ8-VTKbdlo8y6MZNeoBfF1bB6qxHYnaZVDs-8a349LJJE2ndc&h=AT3cFbNDmBsXdKyRQYNMmL2dFTKaSzufaughtlTu2SnOLrDL8Hl9CneEfKnWwGdgF-ALPt0Fwe-OI2_oqOJCds9KiaGaW34pBrFn5rngw7P_ngGG2z1FgGYmcLIEMaFkKzUkND_vThvI3yAwIT-_yvA">Donate</a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="index.php#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -58,7 +60,7 @@
             <div class="col-lg-2">
             </div>
             <div class="col-lg-8">
-                <div class="mt-4">
+                <div class="mt-5">
                     <div class="bigLogo">
                         <img src="assets/images/services-title.png" class="img-fluid" alt="Winter 2020">
                     </div>
@@ -145,23 +147,25 @@
                                 <a class="nav-link" href="index.php">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSfkDpjkqh--MRnFMJhxXiMgqgyDY4q1PxCazHGQ5lgDGY5Hkg/viewform">Youth</a>
+                                <a class="nav-link" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfkDpjkqh--MRnFMJhxXiMgqgyDY4q1PxCazHGQ5lgDGY5Hkg/viewform">Youth</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" target="_blank" href="https://forms.gle/3TVE33u2DeFW6N8F7">Mentor</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Mentor</a>
+                                <a class="nav-link" href="index.php#fundraising">Fundraising</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#fundraising">Fundraising</a>
-                            </li>
-                            <li class="nav-item">
+
+                            <li class="nav-item active">
                                 <a class="nav-link" href="services.php">Services</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" target="_blank" href="https://l.facebook.com/l.php?u=https%3A%2F%2Fcash.app%2F%24M1SLA%3Ffbclid%3DIwAR3jtW4AQJQ8-VTKbdlo8y6MZNeoBfF1bB6qxHYnaZVDs-8a349LJJE2ndc&amp;h=AT3cFbNDmBsXdKyRQYNMmL2dFTKaSzufaughtlTu2SnOLrDL8Hl9CneEfKnWwGdgF-ALPt0Fwe-OI2_oqOJCds9KiaGaW34pBrFn5rngw7P_ngGG2z1FgGYmcLIEMaFkKzUkND_vThvI3yAwIT-_yvA">Donate</a>
+                                <a class="nav-link" target="_blank" href="https://l.facebook.com/l.php?u=https%3A%2F%2Fcash.app%2F%24M1SLA%3Ffbclid%3DIwAR3jtW4AQJQ8-VTKbdlo8y6MZNeoBfF1bB6qxHYnaZVDs-8a349LJJE2ndc&h=AT3cFbNDmBsXdKyRQYNMmL2dFTKaSzufaughtlTu2SnOLrDL8Hl9CneEfKnWwGdgF-ALPt0Fwe-OI2_oqOJCds9KiaGaW34pBrFn5rngw7P_ngGG2z1FgGYmcLIEMaFkKzUkND_vThvI3yAwIT-_yvA">Donate</a>
                             </li>
+
                             <li class="nav-item">
-                                <a class="nav-link" href="#contact">Contact</a>
+                                <a class="nav-link" href="index.php#contact">Contact</a>
                             </li>
                         </ul>
                         <div class="bottomLogoDonate">
@@ -180,6 +184,7 @@
 <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="assets/js/aos.js"></script>
 <script type="text/javascript" src="assets/js/jquery.sticky.js"></script>
+<script type="text/javascript" src="assets/js/jquery.nav.js"></script>
 <script type="text/javascript" src="assets/js/main.js"></script>
 
 </body>

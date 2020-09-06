@@ -15,7 +15,7 @@
 
 </head>
 <body>
-<section class="fundrasing-page bg-flex p-0 services-page">
+<section class="fundrasing-page bg-flex p-sm-0 services-page">
     <header id="sticker" class="main-header">
         <nav class="navbar navbar-expand-lg navbar-light">
             <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -37,16 +37,18 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#fundraising">Fundraising</a>
+                        <a class="nav-link" href="index.php#fundraising">Fundraising</a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link active" href="services.php">Services</a>
+                        <a class="nav-link" href="services.php">Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" target="_blank" href="https://l.facebook.com/l.php?u=https%3A%2F%2Fcash.app%2F%24M1SLA%3Ffbclid%3DIwAR3jtW4AQJQ8-VTKbdlo8y6MZNeoBfF1bB6qxHYnaZVDs-8a349LJJE2ndc&h=AT3cFbNDmBsXdKyRQYNMmL2dFTKaSzufaughtlTu2SnOLrDL8Hl9CneEfKnWwGdgF-ALPt0Fwe-OI2_oqOJCds9KiaGaW34pBrFn5rngw7P_ngGG2z1FgGYmcLIEMaFkKzUkND_vThvI3yAwIT-_yvA">Donate</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.php#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -56,11 +58,14 @@
 
         <div class="row">
             <div class="col-lg-2">
+                <div class="text-center mt-5 ds-none">
+                    <img src="assets/images/marty-logo_03.png" class="img-fluid" alt="Marty Logo" data-aos="zoom-in-up">
+                </div>
             </div>
             <div class="col-lg-8">
-                <div class="mt-4">
+                <div class="mt-5 text-center">
                     <div class="bigLogo">
-                        <img src="assets/images/services-title.png" class="img-fluid" alt="Winter 2020">
+                        <img src="assets/images/thankyou.png" class="img-fluid" alt="Winter 2020">
                     </div>
                     <!-- dotted circle -->
                     <div class="dotted-circle">
@@ -74,16 +79,48 @@
                         <div class="dc dc8"></div>
                         <div class="dc dc9"></div>
                     </div>
-                    <h1 class="heading">Branding & Design Creative Agency</h1>
+                    <h1 class="heading">Make sure to follow us and <a href="https://us7.list-manage.com/subscribe?u=7dfaf7bbee7cab9203a364a9f&id=6faf9ce322">subscribe to our newsletter</a> <br>for upcoming bootcamps and events!</h1>
+                    <br>
+                    <a href="index.php" class="btn btn-primary">BACK TO HOME</a>
                 </div>
             </div>
             <div class="col-lg-2">
-                <div class="donateLink tx-center">
-                    <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fcash.app%2F%24M1SLA%3Ffbclid%3DIwAR3jtW4AQJQ8-VTKbdlo8y6MZNeoBfF1bB6qxHYnaZVDs-8a349LJJE2ndc&h=AT3cFbNDmBsXdKyRQYNMmL2dFTKaSzufaughtlTu2SnOLrDL8Hl9CneEfKnWwGdgF-ALPt0Fwe-OI2_oqOJCds9KiaGaW34pBrFn5rngw7P_ngGG2z1FgGYmcLIEMaFkKzUkND_vThvI3yAwIT-_yvA" target="_blank"><img src="assets/images/donate-button_03.png" alt="logo"></a>
+                <div class="socialLinksIcons">
+                    <ul class="socialList">
+                        <li data-aos="fade-down" data-aos-delay="1500" class="aos-init aos-animate">
+                            <a href="https://www.instagram.com/therealmisla/" target="_blank">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li data-aos="fade-down" data-aos-delay="1200" class="aos-init aos-animate">
+                            <a href="https://www.facebook.com/MadeinSLA" target="_blank">
+                                <i class="fa fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li data-aos="fade-down" data-aos-delay="900" class="aos-init aos-animate">
+                            <a href="https://twitter.com/therealmisla" target="_blank">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li data-aos="fade-down" data-aos-delay="900" class="aos-init">
+                            <a href="https://www.youtube.com/channel/UC1tt-fn3rdTXJN2LkGgCtrw" target="_blank">
+                                <i class="fa fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mislaLogo ds-none">
+                    <a href="https://www.misla.org/"><img src="assets/images/misla-logo_03.png" alt="" class="img-fluid"></a>
+                </div>
+                <div class="martyLogo ds-none">
+                    <img src="assets/images/marty-logo_03_03.png" alt="logo" class="img-fluid">
                 </div>
             </div>
         </div>
         <!--  -->
+
+        <p class="white-color mt40 text-center mb-0">&copy;Copyrights 2020 Misla & Marty - All rights reserved. Made by <a href="https://www.misla.org/">MISLA</a> & <a href="#">MARTY</a></p>
+
     </div>
     <!-- container-fluid -->
 </section>
@@ -92,6 +129,7 @@
 <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="assets/js/aos.js"></script>
 <script type="text/javascript" src="assets/js/jquery.sticky.js"></script>
+<script type="text/javascript" src="assets/js/jquery.nav.js"></script>
 <script type="text/javascript" src="assets/js/main.js"></script>
 
 </body>

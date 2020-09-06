@@ -57,10 +57,12 @@ $(".morelink").click(function(){
    $(this).prev().toggle();
    return false;
 });
-
+    $('#sticker .navbar-expand-lg').onePageNav({
+        currentClass: 'active',
+        changeHash: true,
+        scrollSpeed: 750,
+        scrollThreshold: 0.5,
+        easing: 'swing'
+    });
 
 })(jQuery);
-
-$(function() {
-    $(".rotate-badge h1").lettering();
-});

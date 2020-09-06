@@ -64,8 +64,8 @@ if (isset($_POST['submit']))
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.php">Home</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfkDpjkqh--MRnFMJhxXiMgqgyDY4q1PxCazHGQ5lgDGY5Hkg/viewform">Youth</a>
@@ -75,7 +75,7 @@ if (isset($_POST['submit']))
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#fundraising">Fundraising</a>
+                        <a class="nav-link" href="index.php#fundraising">Fundraising</a>
                     </li>
 
                     <li class="nav-item">
@@ -86,7 +86,7 @@ if (isset($_POST['submit']))
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="index.php#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -110,7 +110,7 @@ if (isset($_POST['submit']))
                             <div class="col-lg-6 col-md-4 col-sm-6">
                                 <div class="imageBox">
                                     <div class="topIcon">
-                                        <img src="assets/images/dev-bg_03.png" alt="">
+                                        <img src="assets/images/dev-bg_03.png" alt="icon">
                                         <h2>Dev Shop<br><span>Academy</span><span class="uniqueWord">D</span></h2>
                                     </div>
                                     <h3><span>Made In South La +</span><br>Students Receive Money to <br>Build Websites</h3>
@@ -121,7 +121,7 @@ if (isset($_POST['submit']))
                             <div class="col-lg-6 col-md-4 col-sm-6">
                                 <div class="imageBox">
                                     <div class="topIcon designBox">
-                                        <img src="assets/images/design-bg_03.png">
+                                        <img src="assets/images/design-bg_03.png" alt="icon">
                                         <h2>Design<span class="uniqueWord">D</span></h2>
                                     </div>
                                     <h3><span>Hawke media :</span><br>Graphic Design, Marketing,<br>Branding & Social Media</h3>
@@ -132,12 +132,12 @@ if (isset($_POST['submit']))
                             <div class="col-lg-6 col-md-4 col-sm-6">
                                 <div class="imageBox">
                                     <div class="topIcon contentCreationBox">
-                                        <img src="assets/images/content-creation-bg_03.png">
+                                        <img src="assets/images/content-creation-bg_03.png" alt="icon">
                                         <h2>Content<br><span>Creation</span><span class="uniqueWord">C</span></h2>
                                     </div>
                                     <h3><span>Youtube Creators Club :</span><br>Film Production +<br>YouTube Content Creation</h3>
                                     <a href="#" class="contentCreationLink">Read More <img
-                                            src="assets/images/content-creation-next-arrow_03.png"></a>
+                                            src="assets/images/content-creation-next-arrow_03.png" alt="icon"></a>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-4 col-sm-6">
@@ -158,23 +158,23 @@ if (isset($_POST['submit']))
                             <div class="col-lg-6 col-md-4 col-sm-6">
                                 <div class="imageBox">
                                     <div class="topIcon resiliencyBox">
-                                        <img src="assets/images/marty-mentor-bg_03.png">
+                                        <img src="assets/images/marty-mentor-bg_03.png" alt="icon">
                                         <h2>Resiliency<span class="uniqueWord">R</span></h2>
                                     </div>
                                     <h3><span>Marty Mentors :</span><br>Mental Health +<br>Soft Skills</h3>
                                     <a href="#" class="resiliencyLink">Read More <img
-                                            src="assets/images/resiliency-next-arrow_03.png"></a>
+                                            src="assets/images/resiliency-next-arrow_03.png" alt="icon"></a>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-4 col-sm-6">
                                 <div class="imageBox">
                                     <div class="topIcon codingBox">
-                                        <img src="assets/images/coding-bg_03.png">
+                                        <img src="assets/images/coding-bg_03.png" alt="icon">
                                         <h2>Coding<span class="uniqueWord">C</span></h2>
                                     </div>
                                     <h3><span>Hidden Genius :</span><br>Javascript, PHP, Back End</h3>
                                     <a href="#" class="codingLink">Read More <img src="assets/images/coding-next-arrow_03.png"
-                                                                                  alt=""></a>
+                                                                                  alt="logo"></a>
                                 </div>
                             </div>
 
@@ -251,7 +251,7 @@ if (isset($_POST['submit']))
                                             <br> <br>
                                             Marty Members explore the inner workings of the tech and multi-media industries through hands-on programming and mentorship to motivate them to blaze paths to self-sufficiency.
                                              <br><br>
-                                        </span>
+                                    </span>
                                 </h3>
                             </div>
                         </div>
@@ -261,7 +261,7 @@ if (isset($_POST['submit']))
                         <div class="col-sm-12">
                             <div class="footerBottomLogo d-sm-none">
                                 <div class="mislaLogo">
-                                    <a href="http://misla.org/"><img src="assets/images/misla-logo_03.png" alt="" class="img-fluid"></a>
+                                    <a href="http://misla.org/"><img src="assets/images/misla-logo_03.png" alt="logo" class="img-fluid"></a>
                                 </div>
                                 <div class="martyLogo">
                                     <a href="#"><img src="assets/images/marty-logo_03_03.png" alt="" class="img-fluid"></a>
@@ -301,16 +301,15 @@ if (isset($_POST['submit']))
             </div>
             <div class="col-lg-2">
                 <div class="donateLink tx-center">
-                    <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fcash.app%2F%24M1SLA%3Ffbclid%3DIwAR3jtW4AQJQ8-VTKbdlo8y6MZNeoBfF1bB6qxHYnaZVDs-8a349LJJE2ndc&h=AT3cFbNDmBsXdKyRQYNMmL2dFTKaSzufaughtlTu2SnOLrDL8Hl9CneEfKnWwGdgF-ALPt0Fwe-OI2_oqOJCds9KiaGaW34pBrFn5rngw7P_ngGG2z1FgGYmcLIEMaFkKzUkND_vThvI3yAwIT-_yvA" target="_blank"><img src="assets/images/donate-button_03.png"
-                                                                                                                                                                                                                                                                                                                                                       alt="logo">
+                    <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fcash.app%2F%24M1SLA%3Ffbclid%3DIwAR3jtW4AQJQ8-VTKbdlo8y6MZNeoBfF1bB6qxHYnaZVDs-8a349LJJE2ndc&h=AT3cFbNDmBsXdKyRQYNMmL2dFTKaSzufaughtlTu2SnOLrDL8Hl9CneEfKnWwGdgF-ALPt0Fwe-OI2_oqOJCds9KiaGaW34pBrFn5rngw7P_ngGG2z1FgGYmcLIEMaFkKzUkND_vThvI3yAwIT-_yvA" target="_blank"><img src="assets/images/donate-button_03.png" alt="logo">
                     </a>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-2 col-md-12">
-                <div class="text-center">
-                    <img src="assets/images/marty-logo_03.png" class="img-fluid" alt="Marty Logo">
+                <div class="text-center ds-none">
+                    <img src="assets/images/marty-logo_03.png" class="img-fluid" alt="Marty Logo" data-aos="zoom-in-up">
                 </div>
             </div>
             <div class="col-lg-8 col-md-12">
@@ -471,7 +470,6 @@ if (isset($_POST['submit']))
             <div class="col-lg-8 col-md-4">
 
                 <div class="bottomMenu">
-
                     <div class="bottomLogoDonate">
                         <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fcash.app%2F%24M1SLA%3Ffbclid%3DIwAR3jtW4AQJQ8-VTKbdlo8y6MZNeoBfF1bB6qxHYnaZVDs-8a349LJJE2ndc&h=AT3cFbNDmBsXdKyRQYNMmL2dFTKaSzufaughtlTu2SnOLrDL8Hl9CneEfKnWwGdgF-ALPt0Fwe-OI2_oqOJCds9KiaGaW34pBrFn5rngw7P_ngGG2z1FgGYmcLIEMaFkKzUkND_vThvI3yAwIT-_yvA" target="_blank"><img class="logoImage"
                                                                                                                                                                                                                                                                                                                                                            src="assets/images/footer-donate-button_03.png" alt=""></a>
@@ -540,8 +538,8 @@ if (isset($_POST['submit']))
             </div>
             <div class="col-md-2"></div>
             <div class="col-md-3">
-                <div class="text-center">
-                    <img src="assets/images/marty-logo_03.png" class="img-fluid" alt="Marty Logo">
+                <div class="text-center ds-none">
+                    <img src="assets/images/marty-logo_03.png" class="img-fluid" alt="Marty Logo" data-aos="zoom-in-up">
                 </div>
                 <div class="footerBottomLogo">
                     <div>
@@ -557,35 +555,37 @@ if (isset($_POST['submit']))
         <div class="row">
 
             <div class="col-sm-5">
-                <p class="white-color mt40 text-center">&copy;Copyrights 2020 Misla & Marty - All rights reserved. Made by <a href="https://www.misla.org/">MISLA</a></p>
+                <p class="white-color mt40 text-center">&copy;Copyrights 2020 Misla & Marty - All rights reserved. Made by <a href="https://www.misla.org/">MISLA</a> & <a href="#">MARTY</a></p>
             </div>
             <div class="col-sm-7">
                 <div class="bottomMenu">
                     <ul class="nav">
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="index.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSfkDpjkqh--MRnFMJhxXiMgqgyDY4q1PxCazHGQ5lgDGY5Hkg/viewform">Youth</a>
+                            <a class="nav-link" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfkDpjkqh--MRnFMJhxXiMgqgyDY4q1PxCazHGQ5lgDGY5Hkg/viewform">Youth</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" target="_blank" href="https://forms.gle/3TVE33u2DeFW6N8F7">Mentor</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Mentor</a>
+                            <a class="nav-link" href="index.php#fundraising">Fundraising</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#fundraising">Fundraising</a>
-                        </li>
+
                         <li class="nav-item">
                             <a class="nav-link" href="services.php">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" target="_blank" href="https://l.facebook.com/l.php?u=https%3A%2F%2Fcash.app%2F%24M1SLA%3Ffbclid%3DIwAR3jtW4AQJQ8-VTKbdlo8y6MZNeoBfF1bB6qxHYnaZVDs-8a349LJJE2ndc&amp;h=AT3cFbNDmBsXdKyRQYNMmL2dFTKaSzufaughtlTu2SnOLrDL8Hl9CneEfKnWwGdgF-ALPt0Fwe-OI2_oqOJCds9KiaGaW34pBrFn5rngw7P_ngGG2z1FgGYmcLIEMaFkKzUkND_vThvI3yAwIT-_yvA">Donate</a>
+                            <a class="nav-link" target="_blank" href="https://l.facebook.com/l.php?u=https%3A%2F%2Fcash.app%2F%24M1SLA%3Ffbclid%3DIwAR3jtW4AQJQ8-VTKbdlo8y6MZNeoBfF1bB6qxHYnaZVDs-8a349LJJE2ndc&h=AT3cFbNDmBsXdKyRQYNMmL2dFTKaSzufaughtlTu2SnOLrDL8Hl9CneEfKnWwGdgF-ALPt0Fwe-OI2_oqOJCds9KiaGaW34pBrFn5rngw7P_ngGG2z1FgGYmcLIEMaFkKzUkND_vThvI3yAwIT-_yvA">Donate</a>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
+                            <a class="nav-link" href="index.php#contact">Contact</a>
                         </li>
                     </ul>
-                    <div class="bottomLogoDonate">
+                    <div class="bottomLogoDonate ds-none">
                         <a href="https://cash.app/$M1SLA" target="_blank"><img class="logoImage" src="assets/images/footer-donate-button_03.png" alt=""></a>
                     </div>
                 </div>
@@ -599,7 +599,7 @@ if (isset($_POST['submit']))
 <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="assets/js/aos.js"></script>
 <script type="text/javascript" src="assets/js/jquery.sticky.js"></script>
-<script type="text/javascript" src="https://css-tricks.com/examples/BlurredText/js/jquery.lettering.js"></script>
+<script type="text/javascript" src="assets/js/jquery.nav.js"></script>
 <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>
