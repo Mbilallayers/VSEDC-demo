@@ -730,6 +730,19 @@ a:hover {
   margin-bottom: 20px;
   max-height: 232px;
 }
+.insight-blog img{
+  max-height: 100%;
+}
+.btn-outline-white {
+  background: #6838c4;
+  color: #FFF;
+  padding: 10px 30px;
+  transition: .4s ease-in-out;
+}
+.btn-outline-white:hover {
+  opacity: .7;
+  color: #FFF;
+}
 .services-box h2{
   font-size: 33px;
   font-family: "Dock11 Heavy";
@@ -737,6 +750,16 @@ a:hover {
   text-shadow: 3px 3px 0 #FFF, -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
   -webkit-text-stroke: .5px #FFF;
   -webkit-text-fill-color: #51d6e3;
+}
+.insight-blog h2 {
+  font-size: 26px;
+}
+.insight-blog p {
+  font-size: 16px;
+}
+
+.meta-data a,.meta-data{
+  color: #e49523;
 }
 .services-box.services-st h2{
   -webkit-text-fill-color: #a1f215;
