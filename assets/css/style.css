@@ -1098,20 +1098,19 @@ a:hover {
     }
 }
 
+@media (max-width:3000px) and (min-width:1800px) {
+    .fundraising-circle li{
+    zoom: 1.6!important;
+    }
+}
 @media (max-width:3000px) and (min-width:1400px) {
-    .horizental-scroll {
-        bottom: 10.4%;
+    .fundraising-circle li{
+    zoom: 1.4;
     }
-    .fundrasing-page .title1, .fundrasing-page .title2 {
-        top: 33%;
+    .fundraising-circle {
+        width: 100%;
     }
-    .fundrasing-page .description1, .fundrasing-page .description2 {
 
-        top: 37%;
-    }
-    .fundrasing-page .head1, .fundrasing-page .head2 {
-        top: 28%;
-    }
     .fundrasing-page {
         background-position: center;
     }
