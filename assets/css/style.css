@@ -237,7 +237,9 @@ a:hover {
     color: #1ac1e4;
     text-transform: uppercase
 }
-
+.text-dark-black {
+    color: #3b3a4d;
+}
 .leftSide .row .imageBox .topIcon h2 span.uniqueWord {
     position: absolute;
     top: 24px;
@@ -245,6 +247,31 @@ a:hover {
     margin: 0;
     display: inline-block;
     color: #fff !important
+}
+.per-line {
+    position: absolute;
+    top: -55px;
+    left: 39px;
+}
+.branding .per-line,.media .per-line ,.design .per-line  {
+    top: 123px;
+    left: -6px;
+}
+.branding .per-line span,.media .per-line span,.design .per-line span{
+    transform: rotate(-45deg);
+}
+.per-line span{
+    position: relative;
+    transform: rotate(-35deg);
+    display: block;
+}
+.fundraising-circle .per-line span::after{
+    content: '';
+    top: 0;
+    height: 2px;
+    display: block;
+    width: 60px;
+    transform: rotate(2deg);
 }
 
 .leftSide .row .imageBox .topIcon.designBox h2 {
@@ -421,7 +448,7 @@ a:hover {
 
 .fundraising-circle {
     width: 800px;
-    margin: 40px auto;
+    margin: 100px auto 140px;
     text-align: center;
 }
 .fundraising-circle li{
@@ -443,9 +470,10 @@ a:hover {
     position: absolute;
     border-radius: 100%;
     margin: 4px;
+}
+.fundraising-circle li::after,.fundraising-circle .res .per-line span::after {
     background: linear-gradient(to right, #5f26a5, #8727d9);
 }
-
 .fundraising-circle li::before {
     content: '';
     width: 120px;
@@ -498,10 +526,14 @@ a:hover {
 .fundraising-circle .fc-single-circle h5{
     text-transform: uppercase;
     font-family: "Dock11 Heavy";
-    font-size: 14px;
     color: #6f2ca9;
+    font-size: 14px;
     z-index: 22;
     margin-bottom: 0;
+}
+.fundraising-circle .per-line {
+    color: #6f2ca9;
+    font-weight: 700;
 }
 
 .fundraising-circle .fc-single-circle p{
@@ -532,10 +564,10 @@ a:hover {
 .fundraising-circle li.music,.fundraising-circle .fc-single-circle::before {
     border-color: #88bbfa;
 }
-.fundraising-circle li.music::after {
+.fundraising-circle li.music::after, .fundraising-circle .music .per-line span::after{
     background: linear-gradient(to right, #6a86ef, #8fc8fc);
 }
-.fundraising-circle li.music .fc-single-circle h5 {
+.fundraising-circle li.music .fc-single-circle h5,.fundraising-circle li.music .per-line {
     color: #7ba5f5;
 }
 
@@ -544,10 +576,10 @@ a:hover {
 .fundraising-circle li.coding,.fundraising-circle li.coding .fc-single-circle::before {
     border-color: #61abbd;
 }
-.fundraising-circle li.coding::after {
+.fundraising-circle li.coding::after,  .fundraising-circle .coding .per-line span::after {
     background: linear-gradient(to right, #69bbbc, #5393be);
 }
-.fundraising-circle li.coding .fc-single-circle h5 {
+.fundraising-circle li.coding .fc-single-circle h5,.fundraising-circle li.coding .per-line {
     color: #3a6075;
 }
 
@@ -556,10 +588,10 @@ a:hover {
 .fundraising-circle li.branding,.fundraising-circle li.branding .fc-single-circle::before {
     border-color: #673dce;
 }
-.fundraising-circle li.branding::after {
+.fundraising-circle li.branding::after , .fundraising-circle .branding .per-line span::after {
     background: linear-gradient(to right, #7161e2, #673dce);
 }
-.fundraising-circle li.branding .fc-single-circle h5 {
+.fundraising-circle li.branding .fc-single-circle h5 ,.fundraising-circle li.branding .per-line {
     color: #4709d2;
 }
 
@@ -568,10 +600,10 @@ a:hover {
 .fundraising-circle li.finance,.fundraising-circle li.finance .fc-single-circle::before {
     border-color: #ecb22f;
 }
-.fundraising-circle li.finance::after {
+.fundraising-circle li.finance::after, .fundraising-circle .finance .per-line span::after  {
     background: linear-gradient(to right, #eed454, #ecb22f);
 }
-.fundraising-circle li.finance .fc-single-circle h5 {
+.fundraising-circle li.finance .fc-single-circle h5,.fundraising-circle li.finance .per-line {
     color: #de8b22;
 }
 /*-----------------------*/
@@ -579,10 +611,10 @@ a:hover {
 .fundraising-circle li.media,.fundraising-circle li.media .fc-single-circle::before {
     border-color: #9ff1f9;
 }
-.fundraising-circle li.media::after {
+.fundraising-circle li.media::after, .fundraising-circle .media .per-line span::after   {
     background: linear-gradient(to right, #64b1c8, #9ff1f9);
 }
-.fundraising-circle li.media .fc-single-circle h5 {
+.fundraising-circle li.media .fc-single-circle h5, .fundraising-circle li.media .per-line {
     color: #1ac1e4;
 }
 /*-----------------------*/
@@ -590,10 +622,10 @@ a:hover {
 .fundraising-circle li.design,.fundraising-circle li.design .fc-single-circle::before {
     border-color: #97d855;
 }
-.fundraising-circle li.design::after {
+.fundraising-circle li.design::after,.fundraising-circle .design .per-line span::after   {
     background: linear-gradient(to right, #d2db51, #78d45a);
 }
-.fundraising-circle li.design .fc-single-circle h5 {
+.fundraising-circle li.design .fc-single-circle h5, .fundraising-circle li.design .per-line {
     color: #8ac426;
 }
 
@@ -1100,12 +1132,12 @@ a:hover {
 
 @media (max-width:3000px) and (min-width:1800px) {
     .fundraising-circle li{
-    zoom: 1.6!important;
+        zoom: 1.6!important;
     }
 }
 @media (max-width:3000px) and (min-width:1400px) {
     .fundraising-circle li{
-    zoom: 1.4;
+        zoom: 1.4;
     }
     .fundraising-circle {
         width: 100%;
@@ -1286,6 +1318,11 @@ a:hover {
 }
 
 @media (max-width:767px) {
+    .branding .per-line, .media .per-line, .design .per-line {
+        top: -58px;
+        left: 39px;
+    }
+
     .social-media {
         display: block;
         padding-left: 0;
@@ -1330,7 +1367,7 @@ a:hover {
         display: block;
     }
     .fundraising-circle li {
-        margin: 0 10px 44px;
+        margin: 0 10px 70px;
     }
     .leftSide .row .imageBox h3 br,.ds-none,.fundraising-circle .fc-single-circle .arrow-right,.fundraising-circle .fc-single-circle .arrow-left {
         display: none;
@@ -1357,6 +1394,9 @@ a:hover {
 }
 
 @media (max-width:575px) {
+    .fundraising-circle li {
+        margin: 0 10px 80px;
+    }
     .pt-box {
         background-color: #f5f5f5;
     }
@@ -1368,7 +1408,7 @@ a:hover {
     }
     .pricing-table {
         width: 100%;
-      }
+    }
     .pt-box {
         border: 0;
     }
@@ -1381,7 +1421,7 @@ a:hover {
         margin-left: -70px
     }
     .pt-header {
-       border-radius: 15px 15px 0 0;
+        border-radius: 15px 15px 0 0;
     }
     .pricing-table {
         margin-bottom: 40px;
