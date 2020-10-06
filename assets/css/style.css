@@ -1137,7 +1137,7 @@ a:hover {
 }
 @media (max-width:3000px) and (min-width:1400px) {
     .fundraising-circle li{
-        zoom: 1.4;
+        zoom: 1.35;
     }
     .fundraising-circle {
         width: 100%;
