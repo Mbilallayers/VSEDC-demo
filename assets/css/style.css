@@ -907,15 +907,19 @@ a:hover {
     font-size: 14px;
 }
 .btn-primary {
-    padding: 20px 30px;
-    background: linear-gradient( #66a8f2, #6a07bf);
+    padding: 15px 25px;
+    background: #6e60c4;
     font-weight: 600;
     border-radius: 50px;
-    border: 4px solid #0062cc;
+    border: 4px solid #6e60c4;
+    min-width: 184px;
+    box-shadow: 1px 1px 14px 0px #6f62bcc7;
 }
 
 .btn-primary:hover {
-    background: linear-gradient( #6a07bf, #6a07bf);
+    background: #6e60c4;
+    border: 4px solid #6e60c4;
+    box-shadow: none;
 }
 .custom-form ::-moz-placeholder {
     color: #ddd;
