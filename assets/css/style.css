@@ -845,7 +845,7 @@ a:hover {
 .fundrasing-page .heading {
     position: relative;
     font-family: "Nunito SemiBold";
-    font-size: 21px;
+    font-size: 26px;
     color: rgb(68, 67, 67);
     /* top: 75%; */
     text-align: center;
@@ -962,10 +962,7 @@ a:hover {
 .fundrasing-page .bottomMenu {
     margin-top: 80px;
 }
-.pt-header {
-    color: #fff;
-    position: relative;
-}
+
 .down-icon,.up-caret {
     position: absolute;
     text-align: center;
@@ -981,25 +978,14 @@ a:hover {
     width: 100%;
     color: #eeeeef;
 }
-.bg-grey-dark {
-    background: linear-gradient(to top, #717a86, #98a0ac);
-    border-radius: 30px 0 0 0;
-}
+
 .bg-navy-blue {
     background: linear-gradient(to top, #5244ae, #7669cb);
 }
 .bg-navy-blue .down-icon{
     color:  #5244ae;
 }
-.bg-navy-blue .pt-title{
-    border-bottom: 3px solid #44369f;
-}
-.bg-blue .pt-title{
-    border-bottom: 3px solid #4c7caa;
-}
-.bg-orange .pt-title{
-    border-bottom: 3px solid #cf4d2e;
-}
+
 .bg-blue {
     background: linear-gradient(to top, #558db3, #73c0c1);
 }
@@ -1023,63 +1009,120 @@ a:hover {
 }
 .pt-box3 {
     position: relative;
-    border-radius: 0 0 15px 15px;
     text-align: center;
     color: #ffffffab;
     padding: 30px 10px 15px;
 }
 .pt-title {
-    border-bottom: 3px solid #484848;
+    background: url(../images/c-1.jpg) center/contain no-repeat;
     text-align: center;
-    padding: 16px 10px;
+    padding: 10px;
     font-weight: 700;
-    margin-bottom: 0;
+    width: 260px;
+    margin: auto auto 10px auto;
+    font-size: 35px;
+}
+.prt-2 .pt-title {
+    background: url(../images/c-2.jpg) center/contain no-repeat;
+}
+.prt-3 .pt-title {
+    background: url(../images/c-3.jpg) center/contain no-repeat;
 }
 .mon-black {
     font-family: "Montserrat Black";
 }
-.custom-container{
-    width: 1180px;
+.price-box {
+    font-size: 16px;
 }
-.pricing-table-outer {
-    width: 100%;
-    margin-bottom: 200px;
+.btn-call {
+    background: url("../images/call-btn.png") center/cover no-repeat;
     border-radius: 30px;
+    font-size: 22px;
+    font-weight: 700;    padding: 14px 35px;
 }
-
-.pt-box {
-    text-align: center;
-    padding: 20px 5px;
-    background-color: #ffffff45;
-    border-right: 3px solid #b6bcc1;
-    min-height: 78px;
+.mb-200 {
+    margin-bottom: 100px;
+    float: left;
+    width: 100%;
 }
-
-.pt-box img {
-    max-width: 40px;
-}
-.pt-box1 {
-    padding: 15px 5px;
-    min-height: 160px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.btn-call:hover {
+    box-shadow: 1px 1px 14px #713bf542;  }
+.f-20 {
+    font-size: 20px;
 }
 .pricing-table {
     float: left;
-    width: 25%;
-    box-shadow: 2px 9px 11px 0px #0404040f;
-    border-radius: 15px;
+    background: url("../images/bg-creatve.png") bottom/contain no-repeat #FFF;
+    width: 30%;
+    box-shadow: 13px 3px 16px 0px #9292aa;
+    border-radius: 35px;
+    padding-bottom: 200px;
+    margin-bottom: 50px;
+    margin-right: 5%;
 }
-.bg-grey-op {
-    background-color: #dae4e875;
+.prt-2 {
+    background: url("../images/bg-creatve2.png") bottom/contain no-repeat #FFF;
+}
+.pricing-table:last-child {
+    margin-right: 0;
+}
+.pt-header .pt-title{
+    color: #FFF
+}
+.price-box h5,.price-box h6,.pricing-detail li {
+    color: #6a737f;
+}
+.pricing-detail {
+    list-style: none;
+    padding: 0 13%;
+    margin-bottom: 0;
+}
+.mt-45 {
+    margin-top: 2.8rem;
+}
+.pricing-detail li {
+    font-size: 20px;
+    position: relative;
+    padding-left: 37px;
+    line-height: 24px;
+    padding-bottom: 19px;
+}
+.p-line {
+    border: 0;
+    border-top: 3px solid #9ba9b7;
+    width: 90%;
+    margin: 1.4rem auto;
+}
+.pricing-detail li:last-child {
+    padding-bottom: 0;
+}
+.pricing-detail li::before {
+    position: absolute;
+    left: 0;
+    top: 1px;
+    content: '';
+    background: url("../images/check.png") center/cover no-repeat;
+    height: 20px;
+    width: 20px;
+}
+.pricing-detail li.cross::before{
+    background: url("../images/cross1.png") center/cover no-repeat;
+}
+.price-box h5 {
+    font-size: 42px;
+    line-height: 42px;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+.price-box h6{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 0;
 }
 .pt-box h5{
     font-weight: 700;
     font-size: 17px;
     color: #646e7b;
-    text-transform: uppercase;
     margin-bottom: 0;
 }
 .pt-box1 h5{
@@ -1107,7 +1150,7 @@ a:hover {
 }
 .social-media li a {
     padding: 8px 13px;
-    font-size: 22px;
+    font-size: 26px;
     color: #8157e0;
     display: block;
 }
@@ -1126,15 +1169,13 @@ a:hover {
     .leftSide .centerLogoMarty img {
         display: none
     }
-}
-@media (max-width: 1207px) {
-    .custom-container {
+    .pt-title {
+        padding: 6px;
         width: 100%;
-    }
-    .custom-container .row {
-        margin: 0;
+        font-size: 27px;
     }
 }
+
 
 @media (max-width:3000px) and (min-width:1800px) {
     .fundraising-circle li{
@@ -1226,10 +1267,6 @@ a:hover {
     }
     .pt-box3 {
         border-radius: 0 0 15px 15px;
-    }
-    .pricing-table {
-        width: 50%;
-        margin-bottom: 30px;
     }
     .main-header {
         padding: 0 13px;
@@ -1325,6 +1362,12 @@ a:hover {
 }
 
 @media (max-width:767px) {
+    .mb-200 {
+        margin-bottom: 200px;
+    }
+    .pricing-table {
+        width: 100%;
+    }
     .branding .per-line, .media .per-line, .design .per-line {
         top: -58px;
         left: 39px;
@@ -1411,9 +1454,6 @@ a:hover {
         background-color: #dae4e875;
     }
     .pricing-table {
-        box-shadow: 2px 9px 11px 0px #0404042e;
-    }
-    .pricing-table {
         width: 100%;
     }
     .pt-box {
@@ -1426,9 +1466,6 @@ a:hover {
         z-index: 0;
         left: 50%;
         margin-left: -70px
-    }
-    .pt-header {
-        border-radius: 15px 15px 0 0;
     }
     .pricing-table {
         margin-bottom: 40px;
