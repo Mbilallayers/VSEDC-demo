@@ -1040,8 +1040,15 @@ a:hover {
     font-size: 22px;
     font-weight: 700;    padding: 14px 35px;
 }
+.pt-monthly .price-box h5{
+    font-size: 32px;
+    line-height: 36px;
+}
+.pt-monthly .price-box h6 {
+    font-size: 20px;
+}
 .mb-200 {
-    margin-bottom: 100px;
+    margin-bottom: 200px;
     float: left;
     width: 100%;
 }
