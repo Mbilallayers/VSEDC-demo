@@ -91,7 +91,7 @@ a:hover {
 }
 
 .fundrasing-page{
-    padding: 50px 10px 0;
+    padding: 50px 10px 20px;
 }
 
 
@@ -1426,9 +1426,6 @@ a:hover {
     }
     .fundraising-circle li {
         margin: 0 10px 70px;
-    }
-    .leftSide .row .imageBox h3 br,.ds-none,.fundraising-circle .fc-single-circle .arrow-right,.fundraising-circle .fc-single-circle .arrow-left {
-        display: none;
     }
 
     .rightSide .bottomMenu {
