@@ -1356,9 +1356,11 @@ a:hover {
         outline: 0;
         padding-left: 0;
     }
-    .fundrasing-page ul.nav li a, .main-header ul.nav li:last-child a {
+    .main-header ul.nav li:last-child a {
         margin-bottom: 0;
-        padding-bottom: 0;
+    }
+    .fundrasing-page ul.nav li a {
+        margin: 8px 20px 8px 0;
     }
     .main-header ul.nav {
         padding: 15px 0 0 0;
