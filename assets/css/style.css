@@ -81,10 +81,6 @@ a:hover {
     max-width: 70px;
     z-index: 10
 }
-.navbar-light .navbar-brand{
-    order: 2;
-}
-
 .leftSide {
     padding: 10px 10px;
     z-index: 10
@@ -1258,8 +1254,13 @@ a:hover {
     }
 }
 @media (max-width:991px) {
-    .navbar-light .navbar-brand{
-        order: inherit;
+    .main-header .navbar{
+        padding: 2.5rem 1rem;
+    }
+    .main-header .navbar-brand{
+        position: absolute;
+        top: 8px;
+        right: 0;
     }
     .fundrasing-page .bottomMenu {
         padding-bottom: 0;
@@ -1352,9 +1353,13 @@ a:hover {
     .navbar-light .navbar-toggler,
     .navbar-light .navbar-toggler:focus {
         border: none;
-        outline: 0
+        outline: 0;
+        padding-left: 0;
     }
-
+    .fundrasing-page ul.nav li a, .main-header ul.nav li:last-child a {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
     .main-header ul.nav {
         padding: 15px 0 0 0;
         flex-direction: column
