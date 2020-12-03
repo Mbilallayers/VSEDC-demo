@@ -1377,6 +1377,9 @@ a:hover {
 }
 
 @media (max-width:767px) {
+    .fundrasing-page .bottomMenu .bottomLogoDonate, .rightSide .bottomMenu .bottomLogoDonate {
+        margin-left: 0;
+    }
     .mb-200 {
         margin-bottom: 200px;
     }
