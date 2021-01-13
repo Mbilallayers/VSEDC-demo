@@ -357,6 +357,32 @@ a:hover {
     padding: 10px 10px;
     z-index: 10
 }
+.marty-donate-box{
+    position: relative;
+}
+.marty-donate-box img {
+    position: absolute;
+    top: 10px;
+    right: 16%;
+    max-height: 540px;
+}
+@media (min-width: 1600px) and (max-width: 2500px) {
+    .marty-donate-box img {
+        right: 29%!important;
+    }
+}
+@media (min-width: 1200px) {
+    .marty-donate-box img {
+        right: 14%;
+    }
+}
+.donate-dark-color {
+    color: #beef43;
+    text-shadow: 3px 1px 3px #0000008f;
+}
+.f-90 {
+    font-size: 71%;    margin-left: 25%;
+}
 
 .fundrasing-page .donateLink,
 .rightSide .donateLink {
@@ -528,11 +554,26 @@ a:hover {
     z-index: 22;
     margin-bottom: 0;
 }
+.donate-heading h2 {
+    font-size: 121px;
+    color: rgba(175, 217, 0, .7);
+    z-index: 1;
+    position: relative;line-height: 100px;
+}
+.payment-qr h6 {
+    font-size: 25px;
+    letter-spacing: 1.5px;
+}
+.payment-qr h6, .donate-heading h2 {
+    font-family: "Dock11 Heavy";
+}
 .fundraising-circle .per-line {
     color: #6f2ca9;
     font-weight: 700;
 }
-
+.payment-qr {
+    margin-bottom: 40px;
+}
 .fundraising-circle .fc-single-circle p{
     font-family: "Nunito Bold";
     color: #3b3a4d;
@@ -737,6 +778,9 @@ a:hover {
 
 .fundrasing-page {
     background-image: url(../images/fundrasing-bg.jpg);
+}
+.donate-page {
+    background-image: url(../images/donate-section.png);
 }
 .services-page {
     background-image: url(../images/services-bg.jpg);
@@ -1123,6 +1167,12 @@ a:hover {
     font-weight: 600;
     margin-bottom: 0;
 }
+.custom-hight {
+    min-height: 230px
+}
+.payment-qr img{
+    height: 150px;
+}
 .pt-box h5{
     font-weight: 700;
     font-size: 17px;
@@ -1131,7 +1181,9 @@ a:hover {
 }
 .pt-box1 h5{
     margin-bottom: 7px;
-}
+}.donate-dark-font {
+     line-height: 82px!important;
+ }
 .pt-box p{
     font-weight: 600;
     font-size: 13px;
@@ -1257,10 +1309,43 @@ a:hover {
     .main-header .navbar{
         padding: 2.5rem 1rem;
     }
+
+    .donate-dark-color {
+        color: rgba(175, 217, 0, .7)!important;
+        text-shadow: none;
+    }
+    .f-90 {
+        font-size: 100%;
+        margin-left: 0;
+    }
+    .donate-heading h2 ,.donate-dark-font  {
+        line-height: 130px!important;
+    }
+
+    .donate-dark-font {
+        margin-top: 30px;
+    }
+    .custom-hight {
+        min-height: 100%;
+    }
+    .marty-donate-box {
+        text-align: center;
+    }
+    .payment-qr img{
+        height: 300px;
+    }
+    .marty-donate-box img {
+        position: relative;
+        right: 0;
+        left: 0;
+    }
     .main-header .navbar-brand{
         position: absolute;
         top: 8px;
         right: 0;
+    }
+    .ds-none {
+        display: none;
     }
     .fundrasing-page .bottomMenu {
         padding-bottom: 0;
@@ -1377,6 +1462,11 @@ a:hover {
 }
 
 @media (max-width:767px) {
+
+    .donate-heading h2 ,.donate-dark-font {
+        font-size: 40px!important;
+        line-height: 50px!important;
+    }
     .fundrasing-page .bottomMenu .bottomLogoDonate, .rightSide .bottomMenu .bottomLogoDonate {
         margin-left: 0;
     }
@@ -1402,6 +1492,9 @@ a:hover {
     }
     .white-color {
         color: #FFF;
+    }
+    .fundraising-circle .fc-single-circle .arrow-right, .fundraising-circle .fc-single-circle .arrow-left {
+        display: none;
     }
     .p-sm-0 {
         padding:0 0 40px 0!important;
