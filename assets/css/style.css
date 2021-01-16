@@ -362,9 +362,9 @@ a:hover {
 }
 .marty-donate-box img {
     position: absolute;
-    top: 10px;
+    top: 30px;
     right: 16%;
-    max-height: 540px;
+    max-height: 600px;
 }
 @media (min-width: 1600px) and (max-width: 2500px) {
     .marty-donate-box img {
@@ -373,7 +373,7 @@ a:hover {
 }
 @media (min-width: 1200px) {
     .marty-donate-box img {
-        right: 14%;
+        right: 10%;
     }
 }
 .donate-dark-color {
@@ -555,13 +555,17 @@ a:hover {
     margin-bottom: 0;
 }
 .donate-heading h2 {
-    font-size: 121px;
+    font-size: 140px;
     color: rgba(175, 217, 0, .7);
-    z-index: 1;
-    position: relative;line-height: 100px;
+    position: relative;line-height: 120px;
+}
+
+.donate-dark-font2 .span1{
+    z-index: 3;
+    position: relative;
 }
 .payment-qr h6 {
-    font-size: 25px;
+    font-size: 30px;
     letter-spacing: 1.5px;
 }
 .payment-qr h6, .donate-heading h2 {
@@ -1168,10 +1172,10 @@ a:hover {
     margin-bottom: 0;
 }
 .custom-hight {
-    min-height: 230px
+    min-height: 250px
 }
 .payment-qr img{
-    height: 150px;
+    height: 180px;
 }
 .pt-box h5{
     font-weight: 700;
@@ -1460,11 +1464,14 @@ a:hover {
 .heading a {
     color: #fc9908;
 }
+h2.donate-dark-font {
+    font-size: 125px;
+}
 
 @media (max-width:767px) {
 
     .donate-heading h2 ,.donate-dark-font {
-        font-size: 40px!important;
+        font-size: 50px!important;
         line-height: 50px!important;
     }
     .fundrasing-page .bottomMenu .bottomLogoDonate, .rightSide .bottomMenu .bottomLogoDonate {
