@@ -51,7 +51,7 @@ a:hover {
 }
 
 .home-page {
-    background-image: url(../images/home-winter.jpg);
+    background-image: url(../images/home-spring.jpg);
     padding-bottom: 40px;
 }
 
@@ -231,7 +231,7 @@ a:hover {
     padding-top: 24px;
     margin-left: -16px;
     z-index: 10;
-    color: #1ac1e4;
+    color: #355635;
     text-transform: uppercase
 }
 .text-dark-black {
@@ -272,7 +272,7 @@ a:hover {
 }
 
 .leftSide .row .imageBox .topIcon.designBox h2 {
-    color: #4709d2
+    color: #034543
 }
 
 .leftSide .row .imageBox .topIcon.contentCreationBox h2,
@@ -287,11 +287,11 @@ a:hover {
     padding: 0 13px;
 }
 .leftSide .row .imageBox .topIcon.resiliencyBox h2 {
-    color: #6f2ca9
+    color: #496f0e
 }
 
 .leftSide .row .imageBox .topIcon.codingBox h2 {
-    color: #3a6075
+    color: #004f38
 }
 
 .leftSide .row .imageBox h3 {
@@ -299,7 +299,7 @@ a:hover {
     margin-top: 8px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    color: #3b3a4d;
+    color: #fff;
     z-index: 10;
 }
 
@@ -1271,7 +1271,7 @@ a:hover {
         font-size: 14px;
     }
     .leftSide .row .imageBox {
-        padding: 15px 10px 0;
+        padding: 15px 10px 20px;
     }
     .leftSide .row .imageBox .topIcon h2 {
         font-size: 26px;
