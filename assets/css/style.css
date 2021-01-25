@@ -1214,8 +1214,14 @@ a:hover {
     color: #8157e0;
     display: block;
 }
-.social-media li a:hover {
+.home .main-header ul.nav li a{
+    color: #FFF;
+}
+.social-media li a:hover,.home .main-header ul.nav li.active a  {
     color: #fc9908;
+}
+.home .main-header ul.nav li:hover a {
+    color: #a30ae9;
 }
 .contact-page .bigLogo img{
     max-width: 210px;
@@ -1286,15 +1292,13 @@ a:hover {
         font-size: 50px;
     }
     .leftSide .centerLogoMarty img {
-        max-width: 340px;
+        max-width: 390px;
     }
     .rightSide .socialLinksIcons .socialList {
         top: 40px;
         left: 37px;
     }
-    .leftSide .centerLogoMarty img {
-        max-width: 340px;
-    }
+
     .fundrasing-page .socialLinksIcons .socialList li a img, .rightSide .socialLinksIcons .socialList li a img {
         max-width: 30px;
     }
@@ -1430,6 +1434,10 @@ a:hover {
         height: 100%;
         z-index: -10;
         min-height: 100vh
+    }
+    .home-page {
+        background-image: url(../images/mobile-bg-spring.jpg)!important;
+
     }
     .fundrasing-page nav {
         margin-left: 0;
