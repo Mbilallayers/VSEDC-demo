@@ -1214,14 +1214,15 @@ a:hover {
     color: #8157e0;
     display: block;
 }
-.home .main-header ul.nav li a{
-    color: #FFF;
-}
+
 .social-media li a:hover,.home .main-header ul.nav li.active a  {
     color: #fc9908;
 }
 .home .main-header ul.nav li:hover a {
     color: #a30ae9;
+}
+.home .is-sticky ul.nav li a {
+    color: #000;
 }
 .contact-page .bigLogo img{
     max-width: 210px;
@@ -1311,6 +1312,14 @@ a:hover {
     }
     .fundrasing-page .bottomMenu .bottomLogoDonate a img, .rightSide .bottomMenu .bottomLogoDonate a img {
         max-width: 70px;
+    }
+}
+@media (min-width:992px) {
+    .home .main-header ul.nav li a{
+        color: #FFF;
+    }
+    .home .is-sticky ul.nav li a {
+        color:#000
     }
 }
 @media (max-width:991px) {
