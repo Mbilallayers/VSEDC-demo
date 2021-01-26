@@ -1,0 +1,1617 @@
+@import "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,800&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap";
+
+* {
+    padding: 0;
+    margin: 0
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.font-weight-semi-bold {
+    font-weight: 600;
+}
+
+a {
+    -webkit-transition: 0.4s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+    -ms-transiion: 0.4s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+    -moz-transition: 0.4s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+    transition: 0.4s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+}
+a:hover {
+    text-decoration: none;
+}
+
+
+@font-face {
+    font-family: "Dock11 Heavy";
+    src: url(../fonts/heavy_dock11.otf)
+}
+
+@font-face {
+    font-family: "Nunito SemiBold";
+    src: url(../fonts/Nunito-SemiBold.ttf)
+}
+
+@font-face {
+    font-family: "Nunito ExtraBold";
+    src: url(../fonts/Nunito-ExtraBold.ttf)
+}
+
+@font-face {
+    font-family: "Nunito Bold";
+    src: url(../fonts/Nunito-Bold.ttf)
+}
+
+@font-face {
+    font-family: "Montserrat Black";
+    src: url(../fonts/Montserrat-Black.ttf)
+}
+
+.home-page {
+    background-image: url(../images/home-winter.jpg);
+    padding-bottom: 40px;
+}
+
+.contact-page {
+    background-image: url(../images/bg-main.jpg)!important;
+    min-height: 100%!important;
+}
+
+.bg-flex {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.home-page .leftSide .topMenu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 10
+}
+
+.fundrasing-page .logoTopMenu img,
+.home-page .main-header .logoTopMenu img {
+    max-width: 70px;
+    z-index: 10
+}
+.leftSide {
+    padding: 10px 10px;
+    z-index: 10
+}
+
+.fundrasing-page{
+    padding: 50px 10px 20px;
+}
+
+
+.fundrasing-page .navbar a img.logoTopMenu,
+.main-header .navbar a img.logoTopMenu {
+    max-width: 100px
+}
+
+.fundrasing-page ul.nav,
+.main-header ul.nav {
+    z-index: 10
+}
+
+.fundrasing-page ul.nav li a,
+.main-header ul.nav li a {
+    margin: 8px 20px 8px 0;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Open Sans";
+    line-height: 16px;
+    color: #747474;
+    transition: .3s ease-in-out;
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    padding-bottom: 8px;
+    z-index: 10
+}
+
+.fundrasing-page .bottomMenu ul.nav li a:before,
+.fundrasing-page ul.nav li a:before,
+.main-header ul.nav li a:before,
+.rightSide .bottomMenu ul.nav li a:before {
+    content: " ";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    transition: all .3s;
+    opacity: 0;
+    height: 3px;
+    width: 0;
+    background-color: #000;
+    color: #fff;
+    z-index: 10
+}
+
+.fundrasing-page ul.nav li,
+.main-header ul.nav li {
+    display: inline-block;
+    list-style: none;
+    transition: background-color .3s;
+    z-index: 10
+}
+
+.fundrasing-page .bottomMenu ul.nav li:hover a:before,
+.fundrasing-page ul.nav li:hover a:before,
+.main-header ul.nav li:hover a:before,
+.rightSide .bottomMenu ul.nav li:hover a:before {
+    width: 100%;
+    opacity: 1;
+    background-color: #a30ae9;
+    z-index: 10
+}
+
+.fundrasing-page .bottomMenu ul.nav li.active a:before,
+.fundrasing-page ul.nav li.active a:before,
+.main-header ul.nav li.active a:before,
+.rightSide .bottomMenu ul.nav li.active a:before {
+    background-color: #e49523;
+    width: 100%;
+    opacity: 1;
+    z-index: 10
+}
+
+.fundrasing-page .bottomMenu ul.nav li.active a,
+.fundrasing-page ul.nav li.active a,
+.main-header ul.nav li.active a,
+.rightSide .bottomMenu ul.nav li.active a {
+    color: #e49523;
+    z-index: 10
+}
+
+.fundrasing-page .bottomMenu ul.nav li:hover a,
+.fundrasing-page ul.nav li:hover a,
+.main-header ul.nav li:hover a,
+.rightSide .bottomMenu ul.nav li:hover a {
+    color: #a30ae9;
+    z-index: 10
+}
+
+.leftSide .bigLogo img {
+    max-height: 100px;
+    margin: auto;
+    text-align: center
+}
+.morelink.less {
+    display: block;
+}
+.morelink {
+    color: #580ab0;
+}
+.morecontent span {
+    display: none;
+}
+.leftSide .bigLogo {
+    padding: 10px 0;
+    text-align: center
+}
+
+.leftSide .row .imageBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 30px;
+}
+
+.leftSide .row .imageBox img {
+    max-width: 60px;
+    z-index: 10;
+}
+
+.leftSide .row .imageBox .topIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+}
+
+.leftSide .row .imageBox .topIcon h2 span {
+    margin-left: 20px;
+}
+
+.leftSide .row .imageBox .topIcon h2 {
+    font-size: 20px;
+    font-family: "Dock11 Heavy";
+    position: relative;
+    font-weight: 700;
+    line-height: 20px;
+    padding-top: 24px;
+    margin-left: -16px;
+    z-index: 10;
+    color: #1ac1e4;
+    text-transform: uppercase
+}
+.text-dark-black {
+    color: #3b3a4d;
+}
+.leftSide .row .imageBox .topIcon h2 span.uniqueWord {
+    position: absolute;
+    top: 24px;
+    left: -1px;
+    margin: 0;
+    display: inline-block;
+    color: #fff !important
+}
+.per-line {
+    position: absolute;
+    top: -55px;
+    left: 39px;
+}
+.branding .per-line,.media .per-line ,.design .per-line  {
+    top: 123px;
+    left: -6px;
+}
+.branding .per-line span,.media .per-line span,.design .per-line span{
+    transform: rotate(-45deg);
+}
+.per-line span{
+    position: relative;
+    transform: rotate(-35deg);
+    display: block;
+}
+.fundraising-circle .per-line span::after{
+    content: '';
+    top: 0;
+    height: 2px;
+    display: block;
+    width: 60px;
+    transform: rotate(2deg);
+}
+
+.leftSide .row .imageBox .topIcon.designBox h2 {
+    color: #4709d2
+}
+
+.leftSide .row .imageBox .topIcon.contentCreationBox h2,
+.leftSide .row .imageBox .topIcon.contentCreationBox h2 span {
+    color: #8ac426
+}
+
+.leftSide .row .imageBox .topIcon.financeBox h2 {
+    color: #de8b22
+}
+.main-header {
+    padding: 0 13px;
+}
+.leftSide .row .imageBox .topIcon.resiliencyBox h2 {
+    color: #6f2ca9
+}
+
+.leftSide .row .imageBox .topIcon.codingBox h2 {
+    color: #3a6075
+}
+
+.leftSide .row .imageBox h3 {
+    font-size: 16px;
+    margin-top: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #3b3a4d;
+    z-index: 10;
+}
+
+.leftSide .row .imageBox h3 span {
+    margin-bottom: 5px;
+    display: inline-block;
+    z-index: 10
+}
+
+.leftSide .row .imageBox a.devShopLink {
+    color: #1ac1e4
+}
+
+.leftSide .row .imageBox a.designLink {
+    color: #8157e0
+}
+
+.leftSide .row .imageBox a.contentCreationLink {
+    color: #8ac326
+}
+
+.leftSide .row .imageBox a.financeLink {
+    color: #c57715
+}
+
+.leftSide .row .imageBox a.resiliencyLink {
+    color: #6126b3
+}
+
+.leftSide .row .imageBox a.codingLink {
+    color: #609eb3
+}
+
+.leftSide .row .imageBox a {
+    font-size: 14px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    z-index: 10;
+    transition: .5s ease-in-out;
+}
+
+.leftSide .row .imageBox a img {
+    max-width: 30px;
+    margin-left: 5px;
+    z-index: 10;
+    transition: .2s ease-in-out
+}
+
+.leftSide .row .imageBox a:hover img {
+    margin-left: 8px
+}
+
+.rightSide {
+    padding: 10px 10px;
+    z-index: 10
+}
+.marty-donate-box{
+    position: relative;
+}
+.marty-donate-box img {
+    position: absolute;
+    top: 30px;
+    right: 16%;
+    max-height: 600px;
+}
+@media (min-width: 1600px) and (max-width: 2500px) {
+    .marty-donate-box img {
+        right: 29%!important;
+    }
+}
+@media (min-width: 1200px) {
+    .marty-donate-box img {
+        right: 10%;
+    }
+}
+.donate-dark-color {
+    color: #beef43;
+    text-shadow: 3px 1px 3px #0000008f;
+}
+.f-90 {
+    font-size: 71%;    margin-left: 25%;
+}
+
+.fundrasing-page .donateLink,
+.rightSide .donateLink {
+    padding: 20px 30px;
+    z-index: 10
+}
+
+.fundrasing-page .donateLink img,
+.rightSide .donateLink img {
+    max-width: 90px;
+    z-index: 10
+}
+
+.rightSide .heroHeading {
+    padding: 10px;
+    text-align: left;
+    z-index: 10
+}
+
+.rightSide .heroHeading h1 {
+    font-family: "Montserrat Black";
+    font-size: 42px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 44px;
+    z-index: 10
+}
+
+.rightSide .youthImage {
+    text-align: right;
+    z-index: 10
+}
+
+.rightSide .mentorImage img,
+.rightSide .youthImage img {
+    max-width: 67%;
+    z-index: 10
+}
+
+.rightSide .detailText {
+    font-family: "Nunito SemiBold";
+    padding: 0 20px 0 40px;
+    z-index: 10
+}
+
+.rightSide .detailText h3 {
+    font-size: 18px;
+    padding: 10px 0 0;
+    color: #fff;
+    z-index: 10
+}
+
+.footerBottomLogo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    margin-left: 36px;
+    z-index: 10;
+    margin-top: 10px
+}
+
+.footerBottomLogo .martyLogo,
+.footerBottomLogo .mislaLogo {
+    padding: 0 20px;
+    z-index: 10
+}
+
+.footerBottomLogo img {
+    max-width: 150px;
+    z-index: 10
+}
+.is-sticky header {
+    background-color: #FFF;
+    z-index: 100!important;
+
+    box-shadow: 0 1px 3px rgba(0,0,0,.15);
+}
+
+.fundrasing-page .socialLinksIcons,
+.rightSide .socialLinksIcons {
+    position: relative;
+    z-index: 10
+}
+
+
+.fundraising-circle {
+    width: 800px;
+    margin: 100px auto 140px;
+    text-align: center;
+}
+.fundraising-circle li{
+    width: 140px;
+    height: 140px;
+    text-align: center;
+    border: 1px solid #8727d9;
+    border-radius: 100%;
+    display: inline-block;
+    position: relative;
+    margin: 0 12px -16px;
+}
+.fundraising-circle li::after {
+    content: '';
+    width: 130px;
+    height: 130px;
+    display: block;
+    top: 0px;
+    position: absolute;
+    border-radius: 100%;
+    margin: 4px;
+}
+.fundraising-circle li::after,.fundraising-circle .res .per-line span::after {
+    background: linear-gradient(to right, #5f26a5, #8727d9);
+}
+.fundraising-circle li::before {
+    content: '';
+    width: 120px;
+    height: 120px;
+    display: block;
+    top: 0px;
+    position: absolute;
+    border-radius: 100%;
+    margin: 9px;
+    background: #f4f4f4;
+    z-index: 1;
+}
+.fundraising-circle .fc-single-circle{
+    border-radius: 100%;
+    padding: 25px 1px;
+    background: #fff;
+    margin: 15px;
+    z-index: 1;
+    position: relative;
+}
+.fundraising-circle .fc-single-circle::after{
+    content: '';
+    position: absolute;
+    display: block;
+    height: 86%;
+    width: 86%;
+    background: #FFF;
+    border-radius: 100%;
+    top: 0px;
+    left: 0;
+    margin: 7px;
+    box-shadow: 5px 4px 7px 0px #dfdfdfc4;
+}
+.fundraising-circle .fc-single-circle::before{
+    content: '';
+    position: absolute;
+    display: block;
+    height: 81%;
+    width: 81%;
+    background: #fff;
+    border: 1px solid #8727d9;
+    box-shadow: inset 1px 1px 7px 3px #6626ae12;
+    border-radius: 100%;
+    top: 1px;
+    left: 1px;
+    margin: 9px;
+    z-index: 1;
+}
+
+.fundraising-circle .fc-single-circle h5{
+    text-transform: uppercase;
+    font-family: "Dock11 Heavy";
+    color: #6f2ca9;
+    font-size: 14px;
+    z-index: 22;
+    margin-bottom: 0;
+}
+.donate-heading h2 {
+    font-size: 140px;
+    color: rgba(175, 217, 0, .7);
+    position: relative;line-height: 120px;
+}
+
+.donate-dark-font2 .span1{
+    z-index: 3;
+    position: relative;
+}
+.payment-qr h6 {
+    font-size: 30px;
+    letter-spacing: 1.5px;
+}
+.payment-qr h6, .donate-heading h2 {
+    font-family: "Dock11 Heavy";
+}
+.fundraising-circle .per-line {
+    color: #6f2ca9;
+    font-weight: 700;
+}
+.payment-qr {
+    margin-bottom: 40px;
+}
+.fundraising-circle .fc-single-circle p{
+    font-family: "Nunito Bold";
+    color: #3b3a4d;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.fundraising-circle .fc-single-circle .inner-circle{
+    padding-top: 20px;
+    position: relative;
+    z-index: 100;
+}
+.fundraising-circle .fc-single-circle .arrow-right,.fundraising-circle .fc-single-circle .arrow-left{
+    position: absolute;
+    bottom: -65px;
+    height: 120px;
+    width: 120px;
+}
+.fundraising-circle .fc-single-circle .arrow-right{
+    right: -35px;
+}
+.fundraising-circle .fc-single-circle .arrow-left{
+    left: -37px;
+}
+/*-----------------------*/
+
+.fundraising-circle li.music,.fundraising-circle .fc-single-circle::before {
+    border-color: #88bbfa;
+}
+.fundraising-circle li.music::after, .fundraising-circle .music .per-line span::after{
+    background: linear-gradient(to right, #6a86ef, #8fc8fc);
+}
+.fundraising-circle li.music .fc-single-circle h5,.fundraising-circle li.music .per-line {
+    color: #7ba5f5;
+}
+
+/*-----------------------*/
+
+.fundraising-circle li.coding,.fundraising-circle li.coding .fc-single-circle::before {
+    border-color: #61abbd;
+}
+.fundraising-circle li.coding::after,  .fundraising-circle .coding .per-line span::after {
+    background: linear-gradient(to right, #69bbbc, #5393be);
+}
+.fundraising-circle li.coding .fc-single-circle h5,.fundraising-circle li.coding .per-line {
+    color: #3a6075;
+}
+
+/*-----------------------*/
+
+.fundraising-circle li.branding,.fundraising-circle li.branding .fc-single-circle::before {
+    border-color: #673dce;
+}
+.fundraising-circle li.branding::after , .fundraising-circle .branding .per-line span::after {
+    background: linear-gradient(to right, #7161e2, #673dce);
+}
+.fundraising-circle li.branding .fc-single-circle h5 ,.fundraising-circle li.branding .per-line {
+    color: #4709d2;
+}
+
+/*-----------------------*/
+
+.fundraising-circle li.finance,.fundraising-circle li.finance .fc-single-circle::before {
+    border-color: #ecb22f;
+}
+.fundraising-circle li.finance::after, .fundraising-circle .finance .per-line span::after  {
+    background: linear-gradient(to right, #eed454, #ecb22f);
+}
+.fundraising-circle li.finance .fc-single-circle h5,.fundraising-circle li.finance .per-line {
+    color: #de8b22;
+}
+/*-----------------------*/
+
+.fundraising-circle li.media,.fundraising-circle li.media .fc-single-circle::before {
+    border-color: #9ff1f9;
+}
+.fundraising-circle li.media::after, .fundraising-circle .media .per-line span::after   {
+    background: linear-gradient(to right, #64b1c8, #9ff1f9);
+}
+.fundraising-circle li.media .fc-single-circle h5, .fundraising-circle li.media .per-line {
+    color: #1ac1e4;
+}
+/*-----------------------*/
+
+.fundraising-circle li.design,.fundraising-circle li.design .fc-single-circle::before {
+    border-color: #97d855;
+}
+.fundraising-circle li.design::after,.fundraising-circle .design .per-line span::after   {
+    background: linear-gradient(to right, #d2db51, #78d45a);
+}
+.fundraising-circle li.design .fc-single-circle h5, .fundraising-circle li.design .per-line {
+    color: #8ac426;
+}
+
+/*-------------------------*/
+.icon-box-right {
+    position: absolute;
+    top: -22px;
+    right: -25px;
+}
+.icon-box-left {
+    position: absolute;
+    top: -22px;
+    left: -33px;
+}
+.icon-box-ld {
+    position: absolute;
+    bottom: -16px;
+    left: -33px;
+}
+.icon-box-rd {
+    position: absolute;
+    bottom: -16px;
+    right: -33px;
+}
+.icon-box-cd {
+    position: absolute;
+    bottom: -42px;
+    left: 21px;
+}
+.icon-box-left img,.icon-box-right img,.icon-box-cd img,.icon-box-ld img,.icon-box-rd img {
+    max-width: 65px;
+}
+.rightSide .socialLinksIcons .socialList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 77px;
+    left: 45px;
+    z-index: 10
+}
+
+.fundrasing-page .socialLinksIcons .socialList li,
+.rightSide .socialLinksIcons .socialList li {
+    padding: 8px 13px;
+    text-align: center;
+}
+
+.rightSide .socialLinksIcons .socialList li a {
+    font-size: 22px;color: #FFF;
+}
+.rightSide .socialLinksIcons .socialList li:hover a {
+    color: #fc9908;
+}
+.fundrasing-page .socialLinksIcons .socialList li a {
+    font-size: 22px;
+    color: #fc9908;
+}
+.fundrasing-page .socialLinksIcons .socialList li:hover a {
+    color: #8157e0;
+}
+
+.fundrasing-page .bottomMenu,
+.rightSide .bottomMenu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 0 40px;
+    z-index: 10
+}
+
+.fundrasing-page .bottomMenu .bottomLogoDonate a img,
+.rightSide .bottomMenu .bottomLogoDonate a img {
+    max-width: 60px
+}
+
+.fundrasing-page .bottomMenu .bottomLogoDonate,
+.rightSide .bottomMenu .bottomLogoDonate {
+    margin-left: 30px
+}
+
+.fundrasing-page .bottomMenu ul.nav li a,
+.rightSide .bottomMenu ul.nav li a {
+    margin: 8px 10px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Open Sans";
+    line-height: 16px;
+    color: #fff;
+    transition: .3s ease-in-out;
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    padding-bottom: 8px;
+    z-index: 10
+}
+
+.leftSide .middleImageBox {
+    position: relative
+}
+
+.leftSide .centerLogoMarty img {
+    position: absolute;
+    top: 40px;
+    max-width: 292px;
+    right: -164px;
+    z-index: 0
+}
+
+
+/* =====secoend page========== */
+
+.fundrasing-page {
+    background-image: url(../images/fundrasing-bg.jpg);
+}
+.donate-page {
+    background-image: url(../images/donate-section.png);
+}
+.services-page {
+    background-image: url(../images/services-bg.jpg);
+}
+.pricing-page {
+    background-image: url(../images/pricing-bg.png);
+}
+.services-page.fundrasing-page .bottomMenu,.pricing-page.fundrasing-page .bottomMenu {
+    margin-top: 0px;
+}
+.services-box {
+    margin-bottom: 50px;
+}
+.services-box img{
+    margin-bottom: 20px;
+    max-height: 232px;
+}
+.insight-blog img{
+    max-height: 100%;
+}
+.btn-outline-white {
+    background: #6838c4;
+    color: #FFF;
+    padding: 10px 30px;
+    transition: .4s ease-in-out;
+    font-weight: 600;
+}
+.btn-outline-white:hover {
+    opacity: .7;
+    color: #FFF;
+}
+
+.services-box h2{
+    font-size: 33px;
+    font-family: "Dock11 Heavy";
+    color: #51d6e3;
+    text-shadow: 3px 3px 0 #FFF, -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+    -webkit-text-stroke: .5px #FFF;
+    -webkit-text-fill-color: #51d6e3;
+}
+.insight-blog h2 {
+    font-size: 26px;
+}
+.insight-blog p {
+    font-size: 16px;
+}
+
+.meta-data a,.meta-data{
+    color: #e49523;
+}
+.services-box.services-st h2{
+    -webkit-text-fill-color: #a1f215;
+    color: #a1f215;
+}
+.services-box.services-design h2 a{
+    -webkit-text-fill-color: #007bff;
+    color: #007bff;
+    -webkit-text-stroke: .02px #FFF;
+}
+.services-box.services-pd h2{
+    -webkit-text-fill-color: #ff9900;
+    color: #ff9900;
+}
+.services-box p{
+    font-size: 18px;
+    font-family: "Nunito SemiBold";
+    font-weight: 600;
+    color: #3b3a4d;
+}
+
+.fundrasing-page nav .col-lg-9 {
+    margin: 0;
+}
+
+/* title */
+.fundrasing-page .bottomMenu ul.nav li {
+    width: auto;
+}
+.fundrasing-page .bigLogo img {
+    display: block;
+    margin: auto;
+    width: 60%;
+}
+
+/* upper heading circle */
+
+.fundrasing-page .dotted-circle {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.fundrasing-page .dotted-circle .dc {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid;
+    border-radius: 50%;
+    border-color: rgb(245, 196, 105);
+    margin-left: 15px;
+}
+
+.fundrasing-page .heading {
+    position: relative;
+    font-family: "Nunito SemiBold";
+    font-size: 26px;
+    color: rgb(68, 67, 67);
+    /* top: 75%; */
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 15px;
+}
+
+.fundrasing-page .heading::after {
+    content: "";
+    display: block;
+    height: .25rem;
+    background: rgb(245, 196, 105);
+    width: 8.5rem;
+    margin: auto;
+    margin-top: 8px;
+}
+
+
+.horizental-scroll {
+    color: #FFF;
+    border: 1px solid;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    position: absolute;
+    bottom: 6%;
+    right: 20px;
+    border-radius: 100%;
+    line-height: 2.2;
+    background: #7620c9;
+    animation: pulse 1s infinite;
+}
+@keyframes pulse {
+    0% {
+        right: 20px;
+        background: #fff;
+        color: #7620c9;
+    }
+    100% {
+        right: 25px;
+    }
+}
+
+.fundrasing-page .socialLinksIcons .socialList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 45px;
+    z-index: 10
+}
+.custom-form .form-control {
+    padding: 1.575rem .75rem;
+    color: #fff;
+    background: linear-gradient( to right, #6a07bf, #66a8f2);
+    border: 1px solid #6782e6;
+    font-weight: 400;
+    font-size: 14px;
+}
+.btn-primary {
+    padding: 15px 25px;
+    background: #6e60c4;
+    font-weight: 600;
+    border-radius: 50px;
+    border: 4px solid #6e60c4;
+    min-width: 184px;
+    box-shadow: 1px 1px 14px 0px #6f62bcc7;
+}
+
+.btn-primary:hover {
+    background: #6e60c4;
+    border: 4px solid #6e60c4;
+    box-shadow: none;
+}
+.custom-form ::-moz-placeholder {
+    color: #ddd;
+}
+.custom-form :-moz-placeholder {
+    color: #ddd;
+}
+.custom-form ::-ms-input-placeholder {
+    color: #ddd;
+}
+.custom-form ::-webkit-input-placeholder {
+    color: #ddd ;
+}
+
+
+.fundrasing-page .mentorImage img,
+.fundrasing-page .youthImage img {
+
+    padding: 0px 0 20px 0;
+}
+
+.fundrasing-page .youthImage img {
+    margin-left: 45px;
+}
+
+.fundrasing-page .mentorImage img {
+    margin-left: 20px
+}
+
+.fundrasing-page .mentorImage,
+.fundrasing-page .youthImage {
+    display: inline;
+}
+
+.fundrasing-page .mislaLogo {
+    width: 80%;
+    margin-top: 175px;
+}
+
+.fundrasing-page .bottomMenu {
+    margin-top: 80px;
+}
+
+.down-icon,.up-caret {
+    position: absolute;
+    text-align: center;
+    font-size: 90px;
+    left: 0;
+}
+.down-icon {
+    bottom: -66px;
+    width: 100%;
+}
+.up-caret {
+    top: -60px;
+    width: 100%;
+    color: #eeeeef;
+}
+
+.bg-navy-blue {
+    background: linear-gradient(to top, #5244ae, #7669cb);
+}
+.bg-navy-blue .down-icon{
+    color:  #5244ae;
+}
+
+.bg-blue {
+    background: linear-gradient(to top, #558db3, #73c0c1);
+}
+.bg-blue .down-icon{
+    color:  #558db3;
+}
+.bg-orange .down-icon{
+    color:  #d85931;
+}
+
+.bg-orange {
+    background: linear-gradient(to top, #d85931, #e69836);
+    border-radius: 0 30px 0px 0;
+}
+.pt-header p {
+    font-weight: 400;
+    padding: 18px 18px;
+    line-height: 34px;
+    margin-bottom: 0;
+    font-size: 24px;
+}
+.pt-box3 {
+    position: relative;
+    text-align: center;
+    color: #ffffffab;
+    padding: 30px 10px 15px;
+}
+.pt-title {
+    background: url(../images/c-1.jpg) center/contain no-repeat;
+    text-align: center;
+    padding: 10px;
+    font-weight: 700;
+    width: 260px;
+    margin: auto auto 10px auto;
+    font-size: 35px;
+}
+.prt-2 .pt-title {
+    background: url(../images/c-2.jpg) center/contain no-repeat;
+}
+.prt-3 .pt-title {
+    background: url(../images/c-3.jpg) center/contain no-repeat;
+}
+.mon-black {
+    font-family: "Montserrat Black";
+}
+.price-box {
+    font-size: 16px;
+}
+.btn-call {
+    background: url("../images/call-btn.png") center/cover no-repeat;
+    border-radius: 30px;
+    font-size: 22px;
+    font-weight: 700;    padding: 14px 35px;
+}
+.pt-monthly .price-box h5{
+    font-size: 32px;
+    line-height: 36px;
+}
+.pt-monthly .price-box h6 {
+    font-size: 20px;
+}
+.mb-200 {
+    margin-bottom: 200px;
+    float: left;
+    width: 100%;
+}
+.btn-call:hover {
+    box-shadow: 1px 1px 14px #713bf542;  }
+.f-20 {
+    font-size: 20px;
+}
+.pricing-table {
+    float: left;
+    background: url("../images/bg-creatve.png") bottom/contain no-repeat #FFF;
+    width: 30%;
+    box-shadow: 13px 3px 16px 0px #9292aa;
+    border-radius: 35px;
+    padding-bottom: 200px;
+    margin-bottom: 50px;
+    margin-right: 5%;
+}
+.prt-2 {
+    background: url("../images/bg-creatve2.png") bottom/contain no-repeat #FFF;
+}
+.pricing-table:last-child {
+    margin-right: 0;
+}
+.pt-header .pt-title{
+    color: #FFF
+}
+.price-box h5,.price-box h6,.pricing-detail li {
+    color: #6a737f;
+}
+.pricing-detail {
+    list-style: none;
+    padding: 0 13%;
+    margin-bottom: 0;
+}
+.mt-45 {
+    margin-top: 2.8rem;
+}
+.pricing-detail li {
+    font-size: 20px;
+    position: relative;
+    padding-left: 37px;
+    line-height: 24px;
+    padding-bottom: 19px;
+}
+.p-line {
+    border: 0;
+    border-top: 3px solid #9ba9b7;
+    width: 90%;
+    margin: 1.4rem auto;
+}
+.pricing-detail li:last-child {
+    padding-bottom: 0;
+}
+.pricing-detail li::before {
+    position: absolute;
+    left: 0;
+    top: 1px;
+    content: '';
+    background: url("../images/check.png") center/cover no-repeat;
+    height: 20px;
+    width: 20px;
+}
+.pricing-detail li.cross::before{
+    background: url("../images/cross1.png") center/cover no-repeat;
+}
+.price-box h5 {
+    font-size: 42px;
+    line-height: 42px;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+.price-box h6{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.custom-hight {
+    min-height: 250px
+}
+.payment-qr img{
+    height: 180px;
+}
+.pt-box h5{
+    font-weight: 700;
+    font-size: 17px;
+    color: #646e7b;
+    margin-bottom: 0;
+}
+.pt-box1 h5{
+    margin-bottom: 7px;
+}.donate-dark-font {
+     line-height: 82px!important;
+ }
+.pt-box p{
+    font-weight: 600;
+    font-size: 13px;
+    color: #646e7b;
+    margin-bottom: 0;
+}
+.contact-page .bottomMenu {
+    margin-top: 0;
+}
+
+.fundrasing-page .bottomMenu p,.fundrasing-page .bottomMenu p a{
+    color: #fff;
+}
+.mt40{
+    margin-top: 40px;
+}
+.social-media {
+    list-style: none;
+    padding-left: 50px;
+}
+.social-media li a {
+    padding: 8px 13px;
+    font-size: 26px;
+    color: #8157e0;
+    display: block;
+}
+.social-media li a:hover {
+    color: #fc9908;
+}
+.contact-page .bigLogo img{
+    max-width: 210px;
+    margin-bottom: 20px;
+}
+.white-color a{
+    color: #ee933e;
+}
+
+@media (max-width:991px) and (min-width:767px) {
+    .leftSide .centerLogoMarty img {
+        display: none
+    }
+    .pt-title {
+        padding: 6px;
+        width: 100%;
+        font-size: 27px;
+    }
+}
+
+
+@media (max-width:3000px) and (min-width:1800px) {
+    .fundraising-circle li{
+        zoom: 1.6!important;
+    }
+}
+@media (max-width:3000px) and (min-width:1400px) {
+    .fundraising-circle li{
+        zoom: 1.35;
+    }
+    .fundraising-circle {
+        width: 100%;
+        margin: 100px auto 250px;
+    }
+
+    .fundrasing-page {
+        background-position: center;
+    }
+    .leftSide .row .imageBox img {
+        max-width: 70px;
+    }
+    .fundrasing-page .navbar a img.logoTopMenu, .leftSide .navbar a img.logoTopMenu {
+        max-width: 100px;
+    }
+    .fundrasing-page ul.nav li a, .leftSide ul.nav li a {
+        margin: 8px 10px;
+        font-size: 18px;
+    }
+    .leftSide .row .imageBox h3 {
+        font-size: 16px;
+    }
+    .leftSide .row .imageBox a {
+        font-size: 14px;
+    }
+    .leftSide .row .imageBox {
+        padding: 15px 10px 0;
+    }
+    .leftSide .row .imageBox .topIcon h2 {
+        font-size: 26px;
+        line-height: 24px;
+        margin-left: -20px;
+    }
+    .rightSide .mentorImage img,
+    .rightSide .youthImage img {
+        max-width: 67%;
+    }
+    .rightSide .heroHeading h1 {
+        font-size: 50px;
+    }
+    .leftSide .centerLogoMarty img {
+        max-width: 340px;
+    }
+    .rightSide .socialLinksIcons .socialList {
+        top: 40px;
+        left: 37px;
+    }
+    .leftSide .centerLogoMarty img {
+        max-width: 340px;
+    }
+    .fundrasing-page .socialLinksIcons .socialList li a img, .rightSide .socialLinksIcons .socialList li a img {
+        max-width: 30px;
+    }
+
+    .footerBottomLogo img {
+        max-width: 175px;
+    }
+    .fundrasing-page .bottomMenu ul.nav li a, .rightSide .bottomMenu ul.nav li a {
+        font-size: 16px;
+    }
+    .fundrasing-page .bottomMenu .bottomLogoDonate a img, .rightSide .bottomMenu .bottomLogoDonate a img {
+        max-width: 70px;
+    }
+}
+@media (max-width:991px) {
+    .main-header .navbar{
+        padding: 2.5rem 1rem;
+    }
+
+    .donate-dark-color {
+        color: rgba(175, 217, 0, .7)!important;
+        text-shadow: none;
+    }
+    .f-90 {
+        font-size: 100%;
+        margin-left: 0;
+    }
+    .donate-heading h2 ,.donate-dark-font  {
+        line-height: 130px!important;
+    }
+
+    .donate-dark-font {
+        margin-top: 30px;
+    }
+    .custom-hight {
+        min-height: 100%;
+    }
+    .marty-donate-box {
+        text-align: center;
+    }
+    .payment-qr img{
+        height: 300px;
+    }
+    .marty-donate-box img {
+        position: relative;
+        right: 0;
+        left: 0;
+    }
+    .main-header .navbar-brand{
+        position: absolute;
+        top: 8px;
+        right: 0;
+    }
+    .ds-none {
+        display: none;
+    }
+    .fundrasing-page .bottomMenu {
+        padding-bottom: 0;
+    }
+    .br-0 .pt-box {
+        border-right: 0;
+    }
+    .bg-blue {
+        border-radius: 30px 0 0 0;
+    }
+    .bg-navy-blue {
+        border-radius: 0 30px 0px 0;
+    }
+    .pt-box3 {
+        border-radius: 0 0 15px 15px;
+    }
+    .main-header {
+        padding: 0 13px;
+        background: #FFF;
+        z-index: 100;
+        position: relative;
+        box-shadow: 0 1px 3px rgba(0,0,0,.15);
+    }
+    .fundraising-circle {
+        width: 100%;
+    }
+    .fundrasing-page ul.nav {
+        display: inline-block;
+    }
+    .fundrasing-page .socialLinksIcons .socialList {
+        display: block;
+        position: relative;
+        left: 0;
+    }
+    .fundrasing-page .socialLinksIcons .socialList li{
+        display: inline-block;
+    }
+    .fundrasing-page .mislaLogo {
+        width: 0;
+    }
+    .fundrasing-page .mislaLogo {
+        margin-top: 20px;
+    }
+    .tx-center ,  .fundrasing-page .socialLinksIcons .socialList{
+        text-align: center;
+    }
+
+    .fundrasing-page .youthImage img,.fundrasing-page .mentorImage img {
+        margin-left: 0;
+    }
+    .fundrasing-page ul.nav li a {
+        margin: 3px 8px;
+    }
+    .fundrasing-page .bottomMenu {
+        margin-top: 10px;
+    }
+    .martyLogo img{
+        max-width: 30%
+    }
+    .mislaLogo img {
+        max-width: 60%
+    }
+    .fundrasing-page ul.nav li, .main-header ul.nav li {
+        width: 100%;
+    }
+    .fundrasing-page .bottomMenu{
+        margin-left: 0;
+    }
+    .fundrasing-page .mislaLogo {
+        width: 23%;
+    }
+    .fundrasing-page ul.nav {
+        padding-left: 0;
+    }
+    .home-page,.contact-page {
+        background-image: url(../images/mobile-bg.jpg)!important;
+        width: 100%;
+        height: 100%;
+        z-index: -10;
+        min-height: 100vh
+    }
+    .fundrasing-page nav {
+        margin-left: 0;
+    }
+    .navbar-light .navbar-toggler i {
+        color: #609eb3;
+        font-size: 40px;
+    }
+
+    .navbar-light .navbar-toggler,
+    .navbar-light .navbar-toggler:focus {
+        border: none;
+        outline: 0;
+        padding-left: 0;
+    }
+    .main-header ul.nav li:last-child a {
+        margin-bottom: 0;
+    }
+    .fundrasing-page ul.nav li a {
+        margin: 8px 20px 8px 0;
+    }
+    .main-header ul.nav {
+        padding: 15px 0 0 0;
+        flex-direction: column
+    }
+
+    .leftSide .bigLogo,
+    .rightSide .donateLink {
+        text-align: center
+    }
+}
+.heading a {
+    color: #fc9908;
+}
+h2.donate-dark-font {
+    font-size: 125px;
+}
+
+@media (max-width:767px) {
+
+    .donate-heading h2 ,.donate-dark-font {
+        font-size: 50px!important;
+        line-height: 50px!important;
+    }
+    .fundrasing-page .bottomMenu .bottomLogoDonate, .rightSide .bottomMenu .bottomLogoDonate {
+        margin-left: 0;
+    }
+    .mb-200 {
+        margin-bottom: 200px;
+    }
+    .pricing-table {
+        width: 100%;
+    }
+    .branding .per-line, .media .per-line, .design .per-line {
+        top: -58px;
+        left: 39px;
+    }
+
+    .social-media {
+        display: block;
+        padding-left: 0;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .social-media li {
+        display: inline-block;
+    }
+    .white-color {
+        color: #FFF;
+    }
+    .fundraising-circle .fc-single-circle .arrow-right, .fundraising-circle .fc-single-circle .arrow-left {
+        display: none;
+    }
+    .p-sm-0 {
+        padding:0 0 40px 0!important;
+    }
+    .fundraising-circle li.finance .icon-box-cd {
+        top: -25px;
+        right: -75px;
+    }
+    .custom-form {
+        margin-bottom: 40px;
+    }
+    .fundraising-circle li.branding .icon-box-ld ,.fundraising-circle li.design .icon-box-rd {
+        bottom: -42px;
+        left: 21px;
+        right: auto;
+    }
+    .rightSide .mentorImage img, .rightSide .youthImage img {
+        margin-bottom: 30px;
+    }
+    .fundraising-circle li.media .icon-box-rd {
+        top: -22px;
+        right: auto;
+        left: -33px;
+    }
+    .fundrasing-page .bottomMenu .bottomLogoDonate a img{
+        max-width: 100%;
+    }
+
+    .fundrasing-page .bottomMenu {
+        text-align: center;
+        display: block;
+    }
+    .fundraising-circle li {
+        margin: 0 10px 70px;
+    }
+
+    .rightSide .bottomMenu {
+        flex-direction: column
+    }
+    .fundrasing-page .bigLogo img {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .leftSide .centerLogoMarty img {
+        position: absolute;
+        top: 0;
+        max-width: 250px;
+        z-index: 0;
+        left: -200px
+    }
+
+    .footerBottomLogo img {
+        max-width: 100%
+    }
+}
+
+@media (max-width:575px) {
+    .fundraising-circle li {
+        margin: 0 10px 80px;
+    }
+    .pt-box {
+        background-color: #f5f5f5;
+    }
+    .bg-grey-op {
+        background-color: #dae4e875;
+    }
+    .pricing-table {
+        width: 100%;
+    }
+    .pt-box {
+        border: 0;
+    }
+    .leftSide .centerLogoMarty img {
+        top: 0;
+        right: 0;
+        max-width: 200px;
+        z-index: 0;
+        left: 50%;
+        margin-left: -70px
+    }
+    .pricing-table {
+        margin-bottom: 40px;
+    }
+    .rightSide .detailText {
+        padding: 0
+    }
+    .up-caret {
+        color: #f5f5f5;
+    }
+    .rightSide .heroHeading,
+    .rightSide .socialLinksIcons,
+    .rightSide .youthImage {
+        text-align: center
+    }
+
+    .rightSide .socialLinksIcons .socialList {
+        justify-content: center;
+        top: 0;
+        position: relative;
+        flex-direction: row;
+        left:0;
+    }
+
+    .rightSide .bottomMenu ul.nav {
+        justify-content: center
+    }
+
+    .rightSide .bottomMenu .bottomLogoDonate {
+        margin-left: 0;
+        margin-top: 20px
+    }
+}
+
