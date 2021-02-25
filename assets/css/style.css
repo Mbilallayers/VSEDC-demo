@@ -1084,6 +1084,7 @@ a:hover {
     border-radius: 30px;
     font-size: 22px;
     font-weight: 700;    padding: 14px 35px;
+    transition: .4s all ease-in-out;
 }
 .pt-monthly .price-box h5{
     font-size: 32px;
@@ -1098,7 +1099,9 @@ a:hover {
     width: 100%;
 }
 .btn-call:hover {
-    box-shadow: 1px 1px 14px #713bf542;  }
+    box-shadow: 1px 1px 14px #713bf542;
+    transform: scale(1.03);
+}
 .f-20 {
     font-size: 20px;
 }
