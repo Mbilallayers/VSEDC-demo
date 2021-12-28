@@ -51,7 +51,7 @@ a:hover {
 }
 
 .home-page {
-    background-image: url(../images/home-spring.jpg);
+    background-image: url(../images/home-winter.jpg);
     padding-bottom: 40px;
 }
 
@@ -299,7 +299,7 @@ a:hover {
     margin-top: 8px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    color: #fff;
+    /* color: #fff; */
     z-index: 10;
 }
 
@@ -1318,9 +1318,10 @@ a:hover {
     }
 }
 @media (min-width:992px) {
-    .home .main-header ul.nav li a{
+    /* .home .main-header ul.nav li a{
         color: #FFF;
     }
+*/
     .home .is-sticky ul.nav li a {
         color:#000
     }
