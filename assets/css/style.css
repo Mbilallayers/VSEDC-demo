@@ -1490,7 +1490,10 @@ h2.donate-dark-font {
 }
 
 @media (max-width:767px) {
-
+    .insight-blog img,iframe {
+        height: 100%;
+        width: 100%;
+    }
     .donate-heading h2 ,.donate-dark-font {
         font-size: 50px!important;
         line-height: 50px!important;
