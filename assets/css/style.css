@@ -802,6 +802,9 @@ a:hover {
     margin-bottom: 20px;
     max-height: 232px;
 }
+.services-box .image-box {
+    text-align: center;
+}
 .insight-blog img{
     max-height: 100%;
 }
